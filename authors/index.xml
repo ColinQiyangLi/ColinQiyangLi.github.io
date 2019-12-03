@@ -5,7 +5,7 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 09 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,7 +15,7 @@
     <item>
       <title>*Qiyang Li*</title>
       <link>/authors/qiyang-li/</link>
-      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
       <guid>/authors/qiyang-li/</guid>
       <description></description>
     </item>
@@ -23,40 +23,8 @@
     <item>
       <title>Cem Anil</title>
       <link>/authors/cem-anil/</link>
-      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
       <guid>/authors/cem-anil/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Roger Grosse</title>
-      <link>/authors/roger-grosse/</link>
-      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/roger-grosse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sageev Oore</title>
-      <link>/authors/sageev-oore/</link>
-      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/sageev-oore/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sicong Huang</title>
-      <link>/authors/sicong-huang/</link>
-      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/sicong-huang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Xuchan Bao</title>
-      <link>/authors/xuchan-bao/</link>
-      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/xuchan-bao/</guid>
       <description></description>
     </item>
     
@@ -77,10 +45,42 @@
     </item>
     
     <item>
+      <title>Roger Grosse</title>
+      <link>/authors/roger-grosse/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/roger-grosse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Saminul Haque*</title>
       <link>/authors/saminul-haque/</link>
       <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
       <guid>/authors/saminul-haque/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sageev Oore</title>
+      <link>/authors/sageev-oore/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/sageev-oore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sicong Huang</title>
+      <link>/authors/sicong-huang/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/sicong-huang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xuchan Bao</title>
+      <link>/authors/xuchan-bao/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/xuchan-bao/</guid>
       <description></description>
     </item>
     
