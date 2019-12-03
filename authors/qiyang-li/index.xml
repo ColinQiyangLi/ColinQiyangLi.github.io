@@ -23,10 +23,10 @@
     </item>
     
     <item>
-      <title>Deep Neural Networks for Improved, Impromptu Trajectory Tracking of Quadrotors</title>
-      <link>/publication/dsl/</link>
-      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/dsl/</guid>
+      <title>Preventing Gradient Attenuation in Lipschitz Constrained Convolutional Networks</title>
+      <link>/publication/lconvnet/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/lconvnet/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 </description>
@@ -35,7 +35,7 @@
     <item>
       <title>Building a Winning Self-Driving Car in Six Months</title>
       <link>/publication/autoronto/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate>
       <guid>/publication/autoronto/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -43,10 +43,10 @@
     </item>
     
     <item>
-      <title>Preventing Gradient Attenuation in Lipschitz Constrained Convolutional Networks</title>
-      <link>/publication/lconvnet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/publication/lconvnet/</guid>
+      <title>Deep Neural Networks for Improved, Impromptu Trajectory Tracking of Quadrotors</title>
+      <link>/publication/dsl/</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/dsl/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 </description>

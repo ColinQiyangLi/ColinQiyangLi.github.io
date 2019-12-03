@@ -61,10 +61,82 @@
     </item>
     
     <item>
+      <title>James Lucas</title>
+      <link>/authors/james-lucas/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/james-lucas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jörn-Henrik Jacobsen</title>
+      <link>/authors/jorn-henrik-jacobsen/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/jorn-henrik-jacobsen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Saminul Haque*</title>
+      <link>/authors/saminul-haque/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/saminul-haque/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Andreas Schimpe</title>
+      <link>/authors/andreas-schimpe/</link>
+      <pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/andreas-schimpe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Angela P. Schoellig</title>
       <link>/authors/angela-p.-schoellig/</link>
-      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate>
       <guid>/authors/angela-p.-schoellig/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chengzhi Winston Liu</title>
+      <link>/authors/chengzhi-winston-liu/</link>
+      <pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/chengzhi-winston-liu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keenan Burnett</title>
+      <link>/authors/keenan-burnett/</link>
+      <pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/keenan-burnett/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mona Gridseth</title>
+      <link>/authors/mona-gridseth/</link>
+      <pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/mona-gridseth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sepehr Samavi</title>
+      <link>/authors/sepehr-samavi/</link>
+      <pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/sepehr-samavi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zachary Kroeze</title>
+      <link>/authors/zachary-kroeze/</link>
+      <pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/zachary-kroeze/</guid>
       <description></description>
     </item>
     
@@ -97,78 +169,6 @@
       <link>/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/authors/admin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Andreas Schimpe</title>
-      <link>/authors/andreas-schimpe/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/andreas-schimpe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Chengzhi Winston Liu</title>
-      <link>/authors/chengzhi-winston-liu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/chengzhi-winston-liu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>James Lucas</title>
-      <link>/authors/james-lucas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/james-lucas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jörn-Henrik Jacobsen</title>
-      <link>/authors/jorn-henrik-jacobsen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/jorn-henrik-jacobsen/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Keenan Burnett</title>
-      <link>/authors/keenan-burnett/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/keenan-burnett/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mona Gridseth</title>
-      <link>/authors/mona-gridseth/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/mona-gridseth/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Saminul Haque*</title>
-      <link>/authors/saminul-haque/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/saminul-haque/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sepehr Samavi</title>
-      <link>/authors/sepehr-samavi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/sepehr-samavi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Zachary Kroeze</title>
-      <link>/authors/zachary-kroeze/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/zachary-kroeze/</guid>
       <description></description>
     </item>
     

@@ -5,7 +5,7 @@
     <link>/authors/angela-p.-schoellig/</link>
       <atom:link href="/authors/angela-p.-schoellig/index.xml" rel="self" type="application/rss+xml" />
     <description>Angela P. Schoellig</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 20 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 03 Nov 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Angela P. Schoellig</title>
@@ -13,20 +13,20 @@
     </image>
     
     <item>
-      <title>Deep Neural Networks for Improved, Impromptu Trajectory Tracking of Quadrotors</title>
-      <link>/publication/dsl/</link>
-      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/dsl/</guid>
+      <title>Building a Winning Self-Driving Car in Six Months</title>
+      <link>/publication/autoronto/</link>
+      <pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/autoronto/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 </description>
     </item>
     
     <item>
-      <title>Building a Winning Self-Driving Car in Six Months</title>
-      <link>/publication/autoronto/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/publication/autoronto/</guid>
+      <title>Deep Neural Networks for Improved, Impromptu Trajectory Tracking of Quadrotors</title>
+      <link>/publication/dsl/</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/dsl/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 </description>

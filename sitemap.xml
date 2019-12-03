@@ -73,8 +73,68 @@
   </url>
   
   <url>
+    <loc>/authors/james-lucas/</loc>
+    <lastmod>2019-11-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/jorn-henrik-jacobsen/</loc>
+    <lastmod>2019-11-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/lconvnet/</loc>
+    <lastmod>2019-11-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/saminul-haque/</loc>
+    <lastmod>2019-11-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/andreas-schimpe/</loc>
+    <lastmod>2018-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/authors/angela-p.-schoellig/</loc>
-    <lastmod>2017-07-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/autoronto/</loc>
+    <lastmod>2018-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/chengzhi-winston-liu/</loc>
+    <lastmod>2018-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/keenan-burnett/</loc>
+    <lastmod>2018-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/mona-gridseth/</loc>
+    <lastmod>2018-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/robotics/</loc>
+    <lastmod>2018-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/sepehr-samavi/</loc>
+    <lastmod>2018-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/zachary-kroeze/</loc>
+    <lastmod>2018-11-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -93,11 +153,6 @@
   </url>
   
   <url>
-    <loc>/tags/robotics/</loc>
-    <lastmod>2017-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/authors/zining-zhu/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
   </url>
@@ -107,51 +162,7 @@
   </url>
   
   <url>
-    <loc>/authors/andreas-schimpe/</loc>
-  </url>
-  
-  <url>
-    <loc>/publication/autoronto/</loc>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/chengzhi-winston-liu/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/james-lucas/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/jorn-henrik-jacobsen/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/keenan-burnett/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/mona-gridseth/</loc>
-  </url>
-  
-  <url>
-    <loc>/publication/lconvnet/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/saminul-haque/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/sepehr-samavi/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/zachary-kroeze/</loc>
   </url>
   
 </urlset>
