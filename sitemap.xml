@@ -7,11 +7,19 @@
   </url>
   
   <url>
+    <loc>/authors/qiyang-li/</loc>
+  </url>
+  
+  <url>
     <loc>/publication_types/1/</loc>
   </url>
   
   <url>
     <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/authors/angela-p.-schoellig/</loc>
   </url>
   
   <url>
@@ -27,7 +35,15 @@
   </url>
   
   <url>
+    <loc>/publication/dsl/</loc>
+  </url>
+  
+  <url>
     <loc>/authors/james-lucas/</loc>
+  </url>
+  
+  <url>
+    <loc>/authors/jingxing-qian/</loc>
   </url>
   
   <url>
@@ -36,6 +52,10 @@
   
   <url>
     <loc>/tags/machine-learning/</loc>
+  </url>
+  
+  <url>
+    <loc>/authors/mohamed-k.-helwa/</loc>
   </url>
   
   <url>
@@ -51,10 +71,6 @@
   </url>
   
   <url>
-    <loc>/authors/qiyang-li/</loc>
-  </url>
-  
-  <url>
     <loc>/tags/robotics/</loc>
   </url>
   
@@ -63,11 +79,31 @@
   </url>
   
   <url>
+    <loc>/authors/sageev-oore/</loc>
+  </url>
+  
+  <url>
     <loc>/authors/saminul-haque/</loc>
   </url>
   
   <url>
+    <loc>/authors/sicong-huang/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>/publication/timbretron/</loc>
+  </url>
+  
+  <url>
+    <loc>/authors/xuchan-bao/</loc>
+  </url>
+  
+  <url>
+    <loc>/authors/zining-zhu/</loc>
   </url>
   
 </urlset>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Robotics | Academic</title>
-    <link>/tags/robotics/</link>
-      <atom:link href="/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
-    <description>Robotics</description>
+    <title>Angela P. Schoellig | Academic</title>
+    <link>/authors/angela-p.-schoellig/</link>
+      <atom:link href="/authors/angela-p.-schoellig/index.xml" rel="self" type="application/rss+xml" />
+    <description>Angela P. Schoellig</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>/img/icon-192.png</url>
-      <title>Robotics</title>
-      <link>/tags/robotics/</link>
+      <title>Angela P. Schoellig</title>
+      <link>/authors/angela-p.-schoellig/</link>
     </image>
     
     <item>

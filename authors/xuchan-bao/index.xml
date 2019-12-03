@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Roger Grosse | Academic</title>
-    <link>/authors/roger-grosse/</link>
-      <atom:link href="/authors/roger-grosse/index.xml" rel="self" type="application/rss+xml" />
-    <description>Roger Grosse</description>
+    <title>Xuchan Bao | Academic</title>
+    <link>/authors/xuchan-bao/</link>
+      <atom:link href="/authors/xuchan-bao/index.xml" rel="self" type="application/rss+xml" />
+    <description>Xuchan Bao</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>/img/icon-192.png</url>
-      <title>Roger Grosse</title>
-      <link>/authors/roger-grosse/</link>
+      <title>Xuchan Bao</title>
+      <link>/authors/xuchan-bao/</link>
     </image>
     
     <item>
-      <title>Preventing Gradient Attenuation in Lipschitz Constrained Convolutional Networks</title>
-      <link>/publication/lconvnet/</link>
+      <title>Deep Neural Networks for Improved, Impromptu Trajectory Tracking of Quadrotors</title>
+      <link>/publication/dsl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/publication/lconvnet/</guid>
+      <guid>/publication/dsl/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 </description>

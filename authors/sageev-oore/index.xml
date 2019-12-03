@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Roger Grosse | Academic</title>
-    <link>/authors/roger-grosse/</link>
-      <atom:link href="/authors/roger-grosse/index.xml" rel="self" type="application/rss+xml" />
-    <description>Roger Grosse</description>
+    <title>Sageev Oore | Academic</title>
+    <link>/authors/sageev-oore/</link>
+      <atom:link href="/authors/sageev-oore/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sageev Oore</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>/img/icon-192.png</url>
-      <title>Roger Grosse</title>
-      <link>/authors/roger-grosse/</link>
+      <title>Sageev Oore</title>
+      <link>/authors/sageev-oore/</link>
     </image>
-    
-    <item>
-      <title>Preventing Gradient Attenuation in Lipschitz Constrained Convolutional Networks</title>
-      <link>/publication/lconvnet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/publication/lconvnet/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-</description>
-    </item>
     
     <item>
       <title>TimbreTron: A WaveNet(CycleGAN(CQT(Audio))) Pipeline for Musical Timbre Transfer</title>
