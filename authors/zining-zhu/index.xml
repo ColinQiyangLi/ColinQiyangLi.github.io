@@ -5,7 +5,7 @@
     <link>/authors/zining-zhu/</link>
       <atom:link href="/authors/zining-zhu/index.xml" rel="self" type="application/rss+xml" />
     <description>Zining Zhu</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 20 Jul 2017 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Zining Zhu</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Deep Neural Networks for Improved, Impromptu Trajectory Tracking of Quadrotors</title>
       <link>/publication/dsl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
       <guid>/publication/dsl/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;

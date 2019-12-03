@@ -5,12 +5,92 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
       <link>/authors/</link>
     </image>
+    
+    <item>
+      <title>*Qiyang Li*</title>
+      <link>/authors/qiyang-li/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/qiyang-li/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cem Anil</title>
+      <link>/authors/cem-anil/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/cem-anil/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Roger Grosse</title>
+      <link>/authors/roger-grosse/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/roger-grosse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sageev Oore</title>
+      <link>/authors/sageev-oore/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/sageev-oore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sicong Huang</title>
+      <link>/authors/sicong-huang/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/sicong-huang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xuchan Bao</title>
+      <link>/authors/xuchan-bao/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/xuchan-bao/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Angela P. Schoellig</title>
+      <link>/authors/angela-p.-schoellig/</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/angela-p.-schoellig/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jingxing Qian</title>
+      <link>/authors/jingxing-qian/</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/jingxing-qian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mohamed K. Helwa</title>
+      <link>/authors/mohamed-k.-helwa/</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/mohamed-k.-helwa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zining Zhu</title>
+      <link>/authors/zining-zhu/</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/zining-zhu/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>
@@ -21,26 +101,18 @@
     </item>
     
     <item>
-      <title>*Qiyang Li*</title>
-      <link>/authors/qiyang-li/</link>
+      <title>Andreas Schimpe</title>
+      <link>/authors/andreas-schimpe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/qiyang-li/</guid>
+      <guid>/authors/andreas-schimpe/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Angela P. Schoellig</title>
-      <link>/authors/angela-p.-schoellig/</link>
+      <title>Chengzhi Winston Liu</title>
+      <link>/authors/chengzhi-winston-liu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/angela-p.-schoellig/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cem Anil</title>
-      <link>/authors/cem-anil/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/cem-anil/</guid>
+      <guid>/authors/chengzhi-winston-liu/</guid>
       <description></description>
     </item>
     
@@ -53,14 +125,6 @@
     </item>
     
     <item>
-      <title>Jingxing Qian</title>
-      <link>/authors/jingxing-qian/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/jingxing-qian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Jörn-Henrik Jacobsen</title>
       <link>/authors/jorn-henrik-jacobsen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -69,26 +133,18 @@
     </item>
     
     <item>
-      <title>Mohamed K. Helwa</title>
-      <link>/authors/mohamed-k.-helwa/</link>
+      <title>Keenan Burnett</title>
+      <link>/authors/keenan-burnett/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/mohamed-k.-helwa/</guid>
+      <guid>/authors/keenan-burnett/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Roger Grosse</title>
-      <link>/authors/roger-grosse/</link>
+      <title>Mona Gridseth</title>
+      <link>/authors/mona-gridseth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/roger-grosse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sageev Oore</title>
-      <link>/authors/sageev-oore/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/sageev-oore/</guid>
+      <guid>/authors/mona-gridseth/</guid>
       <description></description>
     </item>
     
@@ -101,26 +157,18 @@
     </item>
     
     <item>
-      <title>Sicong Huang</title>
-      <link>/authors/sicong-huang/</link>
+      <title>Sepehr Samavi</title>
+      <link>/authors/sepehr-samavi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/sicong-huang/</guid>
+      <guid>/authors/sepehr-samavi/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Xuchan Bao</title>
-      <link>/authors/xuchan-bao/</link>
+      <title>Zachary Kroeze</title>
+      <link>/authors/zachary-kroeze/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/xuchan-bao/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Zining Zhu</title>
-      <link>/authors/zining-zhu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/zining-zhu/</guid>
+      <guid>/authors/zachary-kroeze/</guid>
       <description></description>
     </item>
     
