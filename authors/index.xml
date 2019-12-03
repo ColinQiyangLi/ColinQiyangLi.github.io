@@ -169,7 +169,10 @@
       <link>/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/authors/admin/</guid>
-      <description></description>
+      <description>&lt;p&gt;I am a fourth year undergraduate student studying Engineering Science, Robotics Engineering Major at the University of Toronto. I am currently working with [Roger Grosse]{https://www.cs.toronto.edu/~rgrosse/} on machine learning for automated reasoning at the [Vector Institute]{https://vectorinstitute.ai/}.&lt;/p&gt;
+&lt;p&gt;During my undergraduate study, I have worked on Lipschitz-constrained convolutional network with [Roger Grosse]{https://www.cs.toronto.edu/~rgrosse/} and [Jörn-Henrik Jacobsen]{https://jhjacobsen.github.io/}. I also worked on unsupervised musical timbre transfer with [Roger Grosse]{https://www.cs.toronto.edu/~rgrosse/} and [Sageev Oore]{http://www.cs.smu.ca/~sageev/}. I was a summer research student in [dynamic systems lab]{http://www.dynsyslab.org/vision-news/} where I worked on machine learning for unmanned aerial vehicle (UAV) control and distributed robot controls with [Angela Schoellig]{http://www.dynsyslab.org/prof-angela-schoellig/}.&lt;/p&gt;
+&lt;p&gt;Email: qiyang_at_mail_dot_utoronto_dot_ca&lt;/p&gt;
+</description>
     </item>
     
   </channel>
