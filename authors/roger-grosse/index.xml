@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic</title>
-    <link>/</link>
-      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <description>Academic</description>
+    <title>Roger Grosse | Academic</title>
+    <link>/authors/roger-grosse/</link>
+      <atom:link href="/authors/roger-grosse/index.xml" rel="self" type="application/rss+xml" />
+    <description>Roger Grosse</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
-      <title>Academic</title>
-      <link>/</link>
+      <title>Roger Grosse</title>
+      <link>/authors/roger-grosse/</link>
     </image>
     
     <item>

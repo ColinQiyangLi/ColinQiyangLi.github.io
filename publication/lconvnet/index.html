@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.">
+  <meta name="description" content="Lipschitz constraints under L2 norm on deep neural networks are useful for provable adversarial robustness bounds, stable training, and Wasserstein distance estimation. While heuristic approaches such as the gradient penalty have seen much practical success, it is challenging to achieve similar practical performance while provably enforcing a Lipschitz constraint. In principle, one can design Lipschitz constrained architectures using the composition property of Lipschitz functions, but Anil et al. [2] recently identified a key obstacle to this approach: gradient norm attenuation. They showed how to circumvent this problem in the case of fully connected networks by designing each layer to be gradient norm preserving. We extend their approach to train scalable, expressive, provably Lipschitz convolutional networks. In particular, we present the Block Convolution Orthogonal Parameterization (BCOP), an expressive parameterization of orthogonal convolution operations. We show that even though the space of orthogonal convolutions is disconnected, the largest connected component of BCOP with 2n channels can represent arbitrary BCOP convolutions over n channels. Our BCOP parameterization allows us to train large convolutional networks with provable Lipschitz bounds. Empirically, we find that it is competitive with existing approaches to provable adversarial robustness and Wasserstein distance estimation.">
 
   
   <link rel="alternate" hreflang="en-us" href="/publication/lconvnet/">
@@ -114,14 +114,14 @@
   
   <meta property="og:site_name" content="Academic">
   <meta property="og:url" content="/publication/lconvnet/">
-  <meta property="og:title" content="An example journal article | Academic">
-  <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:title" content="Preventing Gradient Attenuation in Lipschitz Constrained Convolutional Networks | Academic">
+  <meta property="og:description" content="Lipschitz constraints under L2 norm on deep neural networks are useful for provable adversarial robustness bounds, stable training, and Wasserstein distance estimation. While heuristic approaches such as the gradient penalty have seen much practical success, it is challenging to achieve similar practical performance while provably enforcing a Lipschitz constraint. In principle, one can design Lipschitz constrained architectures using the composition property of Lipschitz functions, but Anil et al. [2] recently identified a key obstacle to this approach: gradient norm attenuation. They showed how to circumvent this problem in the case of fully connected networks by designing each layer to be gradient norm preserving. We extend their approach to train scalable, expressive, provably Lipschitz convolutional networks. In particular, we present the Block Convolution Orthogonal Parameterization (BCOP), an expressive parameterization of orthogonal convolution operations. We show that even though the space of orthogonal convolutions is disconnected, the largest connected component of BCOP with 2n channels can represent arbitrary BCOP convolutions over n channels. Our BCOP parameterization allows us to train large convolutional networks with provable Lipschitz bounds. Empirically, we find that it is competitive with existing approaches to provable adversarial robustness and Wasserstein distance estimation."><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2017-01-01T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2015-09-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2017-01-01T00:00:00&#43;00:00">
   
 
   
@@ -147,14 +147,14 @@
     "@type": "WebPage",
     "@id": "/publication/lconvnet/"
   },
-  "headline": "An example journal article",
+  "headline": "Preventing Gradient Attenuation in Lipschitz Constrained Convolutional Networks",
   
   "datePublished": "2017-01-01T00:00:00Z",
-  "dateModified": "2015-09-01T00:00:00Z",
+  "dateModified": "2017-01-01T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Qiyang (Colin) Li"
+    "name": "Qiyang Li*"
   },
   
   "publisher": {
@@ -165,7 +165,7 @@
       "url": "/img/icon-512.png"
     }
   },
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum."
+  "description": "Lipschitz constraints under L2 norm on deep neural networks are useful for provable adversarial robustness bounds, stable training, and Wasserstein distance estimation. While heuristic approaches such as the gradient penalty have seen much practical success, it is challenging to achieve similar practical performance while provably enforcing a Lipschitz constraint. In principle, one can design Lipschitz constrained architectures using the composition property of Lipschitz functions, but Anil et al. [2] recently identified a key obstacle to this approach: gradient norm attenuation. They showed how to circumvent this problem in the case of fully connected networks by designing each layer to be gradient norm preserving. We extend their approach to train scalable, expressive, provably Lipschitz convolutional networks. In particular, we present the Block Convolution Orthogonal Parameterization (BCOP), an expressive parameterization of orthogonal convolution operations. We show that even though the space of orthogonal convolutions is disconnected, the largest connected component of BCOP with 2n channels can represent arbitrary BCOP convolutions over n channels. Our BCOP parameterization allows us to train large convolutional networks with provable Lipschitz bounds. Empirically, we find that it is competitive with existing approaches to provable adversarial robustness and Wasserstein distance estimation."
 }
 </script>
 
@@ -183,7 +183,7 @@
 
 
 
-  <title>An example journal article | Academic</title>
+  <title>Preventing Gradient Attenuation in Lipschitz Constrained Convolutional Networks | Academic</title>
 
 </head>
 
@@ -352,7 +352,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>An example journal article</h1>
+  <h1>Preventing Gradient Attenuation in Lipschitz Constrained Convolutional Networks</h1>
 
   
 
@@ -372,7 +372,7 @@
 
 
   
-  <span><a href="/authors/admin/">Qiyang (Colin) Li</a></span>, <span><a href="/authors/robert-ford/">Robert Ford</a></span>
+  <span><a href="/authors/qiyang-li/">Qiyang Li*</a></span>, <span><a href="/authors/saminul-haque/">Saminul Haque*</a></span>, <span><a href="/authors/cem-anil/">Cem Anil</a></span>, <span><a href="/authors/james-lucas/">James Lucas</a></span>, <span><a href="/authors/roger-grosse/">Roger Grosse</a></span>, <span><a href="/authors/jorn-henrik-jacobsen/">Jörn-Henrik Jacobsen</a></span>
 
   </div>
   
@@ -384,7 +384,7 @@
     
       
     
-    September 2015
+    January 2017
   </span>
   
 
@@ -432,8 +432,19 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="http://arxiv.org/pdf/1512.04133v1" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/pdf/1911.00937.pdf" target="_blank" rel="noopener">
   PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/ColinQiyangLi/LConvNet" target="_blank" rel="noopener">
+  Code
 </a>
 
 
@@ -441,8 +452,13 @@
 
 
 
-
-
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/ColinQiyangLi/LConvNet/blob/master/poster.pdf" target="_blank" rel="noopener">
+  Poster
+</a>
 
 
   
@@ -464,7 +480,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.</p>
+    <p class="pub-abstract">Lipschitz constraints under L2 norm on deep neural networks are useful for provable adversarial robustness bounds, stable training, and Wasserstein distance estimation. While heuristic approaches such as the gradient penalty have seen much practical success, it is challenging to achieve similar practical performance while provably enforcing a Lipschitz constraint. In principle, one can design Lipschitz constrained architectures using the composition property of Lipschitz functions, but Anil et al. [2] recently identified a key obstacle to this approach: gradient norm attenuation. They showed how to circumvent this problem in the case of fully connected networks by designing each layer to be gradient norm preserving. We extend their approach to train scalable, expressive, provably Lipschitz convolutional networks. In particular, we present the Block Convolution Orthogonal Parameterization (BCOP), an expressive parameterization of orthogonal convolution operations. We show that even though the space of orthogonal convolutions is disconnected, the largest connected component of BCOP with 2n channels can represent arbitrary BCOP convolutions over n channels. Our BCOP parameterization allows us to train large convolutional networks with provable Lipschitz bounds. Empirically, we find that it is competitive with existing approaches to provable adversarial robustness and Wasserstein distance estimation.</p>
     
 
     
@@ -476,8 +492,8 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
-              Journal article
+            <a href="/publication/#1">
+              Conference paper
             </a>
             
           </div>
@@ -489,24 +505,11 @@
     
 
     
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9"><em>Journal of Source Themes, 1</em>(1)</div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    
 
     <div class="space-below"></div>
 
     <div class="article-style"><!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<p>Supplementary notes can be added here, including <a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">code and math</a>.</p>
 </div>
 
     
@@ -517,7 +520,9 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/source-themes/">Source Themes</a>
+  <a class="badge badge-light" href="/tags/machine-learning/">Machine Learning</a>
+  
+  <a class="badge badge-light" href="/tags/robotics/">Robotics</a>
   
 </div>
 
@@ -534,7 +539,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/publication/lconvnet/&amp;text=An%20example%20journal%20article" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/publication/lconvnet/&amp;text=Preventing%20Gradient%20Attenuation%20in%20Lipschitz%20Constrained%20Convolutional%20Networks" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -547,7 +552,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/publication/lconvnet/&amp;t=An%20example%20journal%20article" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/publication/lconvnet/&amp;t=Preventing%20Gradient%20Attenuation%20in%20Lipschitz%20Constrained%20Convolutional%20Networks" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -560,7 +565,7 @@
       
       
       <li>
-        <a href="mailto:?subject=An%20example%20journal%20article&amp;body=/publication/lconvnet/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Preventing%20Gradient%20Attenuation%20in%20Lipschitz%20Constrained%20Convolutional%20Networks&amp;body=/publication/lconvnet/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -573,7 +578,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/publication/lconvnet/&amp;title=An%20example%20journal%20article" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/publication/lconvnet/&amp;title=Preventing%20Gradient%20Attenuation%20in%20Lipschitz%20Constrained%20Convolutional%20Networks" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -586,7 +591,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=An%20example%20journal%20article%20/publication/lconvnet/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=Preventing%20Gradient%20Attenuation%20in%20Lipschitz%20Constrained%20Convolutional%20Networks%20/publication/lconvnet/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -599,7 +604,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/publication/lconvnet/&amp;title=An%20example%20journal%20article" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/publication/lconvnet/&amp;title=Preventing%20Gradient%20Attenuation%20in%20Lipschitz%20Constrained%20Convolutional%20Networks" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -632,99 +637,15 @@
   
   
   
-    
-  
   
   <div class="media author-card content-widget-hr">
     
-      
-      <img class="portrait mr-3" src="/authors/admin/avatar_hu33748b197983e54423003bd3d808df32_112026_250x250_fill_lanczos_center_2.png" alt="Avatar">
-    
 
     <div class="media-body">
-      <h5 class="card-title"><a href="/">Qiyang (Colin) Li</a></h5>
-      <h6 class="card-subtitle">Undergraduate Researcher in Machine Learning and Robotics</h6>
-      <p class="card-text">My research interests include efficient and robust learning algorithms that closely resemble human intelligence, adversarial robustness, theories that could explain the empirical strength and vulnerability of existing deep learning models, machine learning applications for robotics and control.</p>
+      <h5 class="card-title"><a href="/authors/qiyang-li/"></a></h5>
+      
+      
       <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-    <li>
-      <a href="mailto:qiyang.li@mail.utoronto.ca" >
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://twitter.com/qiyang_li" target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://scholar.google.com/citations?user=qlwwdfEAAAAJ&amp;hl=en" target="_blank" rel="noopener">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://github.com/ColinQiyangLi" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/files/cv.pdf" >
-        <i class="ai ai-cv"></i>
-      </a>
-    </li>
   
 </ul>
 
