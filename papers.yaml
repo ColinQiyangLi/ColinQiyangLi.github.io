@@ -1,159 +1,4 @@
 papers:
-  - name: dnnquad
-    title:
-      link: https://arxiv.org/pdf/1610.06283.pdf
-      name: Deep neural networks for improved, impromptu trajectory tracking of quadrotors
-    authors:
-      - me: true
-      - name: Jingxing Qian
-        href: https://scholar.google.ca/citations?user=OZk7X80AAAAJ&hl=en
-      - name: Zining Zhu
-        href: https://ziningzhu.github.io/
-      - name: Xuchan Bao
-        href: https://www.cs.toronto.edu/~jennybao/
-      - name: Mohamed K. Helwa
-        href: https://scholar.google.ca/citations?user=ewqmB6sAAAAJ&hl=en
-      - name: Angela P. Schoellig
-        href: https://www.dynsyslab.org/prof-angela-schoellig/
-    conference:
-      name: International Conference on Robotics and Automation (ICRA)
-      year: 2017
-    links:
-      - name: arXiv
-        href: https://arxiv.org/abs/1610.06283
-      - name: poster
-        href: images/lexa_poster.pdf
-      - name: video (1 min)
-        href: https://youtu.be/r1WnMUZy9-Y
-    description: 
-    highlighted: true
-    nogif: true
-
-  - name: swarm
-    title:
-      link: https://arxiv.org/pdf/1709.06620.pdf
-      name: Learning of Coordination Policies for Robotic Swarms
-    authors:
-      - me: true
-      - name: Xintong Du
-        href: https://ca.linkedin.com/in/xintong-du-tracy
-      - name: Yizhou Huang
-        href: https://scholar.google.ca/citations?user=YDCsS5EAAAAJ&hl=en
-      - name: Quinlan Sykora
-        href: https://scholar.google.com/citations?user=QKNeRFsAAAAJ&hl=en
-      - name: Angela P. Schoellig
-        href: https://www.dynsyslab.org/prof-angela-schoellig/
-    conference:
-      name: Preprint
-      year: 2017
-    links:
-      - name: arXiv
-        href: https://arxiv.org/abs/1709.06620
-    description:
-    highlighted: false
-    nogif: true
-
-  - name: timbretron
-    title:
-      link: https://arxiv.org/pdf/1811.09620.pdf
-      name: "Timbretron: A WaveNet(CycleGAN(CQT(Audio))) Pipeline for Musical Timbre Transfer"
-    authors:
-      - name: Sicong Huang
-        href: https://www.cs.toronto.edu/~huang/
-      - me: true
-      - name: Cem Anil
-        href: https://www.cs.toronto.edu/~anilcem/
-      - name: Xuchan Bao
-        href: https://www.cs.toronto.edu/~jennybao/
-      - name: Sageev Oore
-        href: https://web.cs.dal.ca/~oore/
-      - name: Roger B. Grosse
-        href: https://www.cs.toronto.edu/~rgrosse/
-    conference:
-      name: International Conference on Learning Representations (ICLR)
-      year: 2019
-    links:
-      - name: arXiv
-        href: https://arxiv.org/abs/1811.09620
-      - name: video (7 min)
-        href: https://youtu.be/YQAupr7JxNY?si=aXzKOfVJ6YCGL8aq
-    description: 
-    highlighted: false
-    nogif: true
-
-  - name: bcop
-    title:
-      link: https://arxiv.org/pdf/1911.00937.pdf
-      name: Preventing Gradient Attenuation in Lipschitz Constrained Convolutional Networks
-    authors:
-      - me: true
-        star: true
-      - name: Saminul Haque
-        star: true
-        href: 
-      - name: Cem Anil
-        href: https://www.cs.toronto.edu/~anilcem/
-      - name: James Lucas
-        href: https://www.cs.toronto.edu/~jlucas/
-      - name: Roger Grosse
-        href: https://www.cs.toronto.edu/~rgrosse/
-      - name: Jorn-Henrik Jacobsen
-        href: https://jhjacobsen.github.io/
-    conference:
-      name: Neural Information Processing Systems (NeurIPS)
-      year: 2019
-    links:
-      - name: arXiv
-        href: https://arxiv.org/abs/1911.00937
-    description: 
-    highlighted: true
-    nogif: true
-
-  - name: tto
-    title:
-      link: https://arxiv.org/pdf/2106.02039.pdf
-      name: "Offline reinforcement learning as one big sequence modeling problem"
-    authors:
-      - name: Michael Janner
-        href: https://jannerm.github.io/
-      - me: true
-      - name: Sergey Levine
-        href: https://people.eecs.berkeley.edu/~svlevine
-    conference:
-      name: Conference on Neural Information Processing Systems (NeurIPS)
-      year: 2021
-    links:
-      - name: arXiv
-        href: https://arxiv.org/abs/2106.02039
-    description: 
-    highlighted: false
-    nogif: true
-
-  - name: adacat
-    title:
-      link: https://arxiv.org/pdf/2208.02246.pdf
-      name: "AdaCat: Adaptive categorical discretization for autoregressive models"
-    authors:
-      - me: true
-      - name: Ajay Jain
-        href: https://www.ajayjain.net/
-      - name: Pieter Abbeel
-        href: http://people.eecs.berkeley.edu/~pabbeel/
-    conference:
-      name: Uncertainty in Artificial Intelligence (UAI)
-      year: 2022
-    links:
-      - name: project page & videos
-        href: adacat/index.html
-      - name: arXiv
-        href: https://arxiv.org/abs/2208.02246
-      - name: code
-        href: https://github.com/ColinQiyangLi/AdaCat
-      - name: lib
-        href: https://github.com/ColinQiyangLi/AdaCat-pip
-    description: 
-    highlighted: true
-    nogif: true
 
   - name: avtd
     title:
@@ -197,4 +42,163 @@ papers:
         href: https://arxiv.org/abs/2212.12809
     description: 
     highlighted: false
+    nogif: true
+
+  - name: adacat
+    title:
+      link: https://arxiv.org/pdf/2208.02246.pdf
+      name: "AdaCat: Adaptive categorical discretization for autoregressive models"
+    authors:
+      - me: true
+      - name: Ajay Jain
+        href: https://www.ajayjain.net/
+      - name: Pieter Abbeel
+        href: http://people.eecs.berkeley.edu/~pabbeel/
+    conference:
+      name: Uncertainty in Artificial Intelligence (UAI)
+      year: 2022
+    links:
+      - name: project page & videos
+        href: adacat/index.html
+      - name: arXiv
+        href: https://arxiv.org/abs/2208.02246
+      - name: code
+        href: https://github.com/ColinQiyangLi/AdaCat
+      - name: lib
+        href: https://github.com/ColinQiyangLi/AdaCat-pip
+    description: 
+    highlighted: true
+    nogif: false
+
+  - name: tto
+    title:
+      link: https://arxiv.org/pdf/2106.02039.pdf
+      name: "Offline reinforcement learning as one big sequence modeling problem"
+    authors:
+      - name: Michael Janner
+        href: https://jannerm.github.io/
+      - me: true
+      - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
+    conference:
+      name: Conference on Neural Information Processing Systems (NeurIPS)
+      year: 2021
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/2106.02039
+      - name: code
+        href: https://github.com/JannerM/trajectory-transformer
+    description: 
+    highlighted: false
+    nogif: true
+
+  - name: bcop
+    title:
+      link: https://arxiv.org/pdf/1911.00937.pdf
+      name: Preventing Gradient Attenuation in Lipschitz Constrained Convolutional Networks
+    authors:
+      - me: true
+        star: true
+      - name: Saminul Haque
+        star: true
+        href: 
+      - name: Cem Anil
+        href: https://www.cs.toronto.edu/~anilcem/
+      - name: James Lucas
+        href: https://www.cs.toronto.edu/~jlucas/
+      - name: Roger Grosse
+        href: https://www.cs.toronto.edu/~rgrosse/
+      - name: Jorn-Henrik Jacobsen
+        href: https://jhjacobsen.github.io/
+    conference:
+      name: Neural Information Processing Systems (NeurIPS)
+      year: 2019
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/1911.00937
+    description: 
+    highlighted: true
+    nogif: true
+
+  - name: timbretron
+    title:
+      link: https://arxiv.org/pdf/1811.09620.pdf
+      name: "Timbretron: A WaveNet(CycleGAN(CQT(Audio))) Pipeline for Musical Timbre Transfer"
+    authors:
+      - name: Sicong Huang
+        href: https://www.cs.toronto.edu/~huang/
+      - me: true
+      - name: Cem Anil
+        href: https://www.cs.toronto.edu/~anilcem/
+      - name: Xuchan Bao
+        href: https://www.cs.toronto.edu/~jennybao/
+      - name: Sageev Oore
+        href: https://web.cs.dal.ca/~oore/
+      - name: Roger B. Grosse
+        href: https://www.cs.toronto.edu/~rgrosse/
+    conference:
+      name: International Conference on Learning Representations (ICLR)
+      year: 2019
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/1811.09620
+      - name: video (7 min)
+        href: https://youtu.be/YQAupr7JxNY?si=aXzKOfVJ6YCGL8aq
+    description: 
+    highlighted: false
+    nogif: true
+
+
+  - name: swarm
+    title:
+      link: https://arxiv.org/pdf/1709.06620.pdf
+      name: Learning of Coordination Policies for Robotic Swarms
+    authors:
+      - me: true
+      - name: Xintong Du
+        href: https://ca.linkedin.com/in/xintong-du-tracy
+      - name: Yizhou Huang
+        href: https://scholar.google.ca/citations?user=YDCsS5EAAAAJ&hl=en
+      - name: Quinlan Sykora
+        href: https://scholar.google.com/citations?user=QKNeRFsAAAAJ&hl=en
+      - name: Angela P. Schoellig
+        href: https://www.dynsyslab.org/prof-angela-schoellig/
+    conference:
+      name: Preprint
+      year: 2017
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/1709.06620
+    description:
+    highlighted: false
+    nogif: true
+
+  - name: dnnquad
+    title:
+      link: https://arxiv.org/pdf/1610.06283.pdf
+      name: Deep neural networks for improved, impromptu trajectory tracking of quadrotors
+    authors:
+      - me: true
+      - name: Jingxing Qian
+        href: https://scholar.google.ca/citations?user=OZk7X80AAAAJ&hl=en
+      - name: Zining Zhu
+        href: https://ziningzhu.github.io/
+      - name: Xuchan Bao
+        href: https://www.cs.toronto.edu/~jennybao/
+      - name: Mohamed K. Helwa
+        href: https://scholar.google.ca/citations?user=ewqmB6sAAAAJ&hl=en
+      - name: Angela P. Schoellig
+        href: https://www.dynsyslab.org/prof-angela-schoellig/
+    conference:
+      name: International Conference on Robotics and Automation (ICRA)
+      year: 2017
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/1610.06283
+      - name: poster
+        href: images/lexa_poster.pdf
+      - name: video (1 min)
+        href: https://youtu.be/r1WnMUZy9-Y
+    description: 
+    highlighted: true
     nogif: true
