@@ -49,7 +49,7 @@ papers:
   - name: adacat
     title:
       link: https://arxiv.org/pdf/2208.02246.pdf
-      name: "AdaCat: Adaptive categorical discretization for autoregressive models"
+      name: "AdaCat: Adaptive Categorical Discretization for Autoregressive Models"
     authors:
       - me: true
       - name: Ajay Jain
@@ -77,7 +77,7 @@ papers:
   - name: tto
     title:
       link: https://arxiv.org/pdf/2106.02039.pdf
-      name: "Offline reinforcement learning as one big sequence modeling problem"
+      name: "Offline Reinforcement Learning as One Big Sequence Modeling Problem"
     authors:
       - name: Michael Janner
         href: https://jannerm.github.io/
@@ -180,7 +180,7 @@ papers:
   - name: dnnquad
     title:
       link: https://arxiv.org/pdf/1610.06283.pdf
-      name: Deep neural networks for improved, impromptu trajectory tracking of quadrotors
+      name: Deep Neural Networks for Improved, Impromptu Trajectory Tracking of Quadrotors
     authors:
       - me: true
       - name: Jingxing Qian
