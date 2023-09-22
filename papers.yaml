@@ -18,6 +18,8 @@ papers:
     links:
       - name: arXiv
         href: https://arxiv.org/abs/2304.10466
+      - name: tweet
+        href: https://x.com/qiyang_li/status/1652340859793444864?s=20
     description: 
     highlighted: true
     nogif: true
@@ -58,7 +60,7 @@ papers:
       name: Uncertainty in Artificial Intelligence (UAI)
       year: 2022
     links:
-      - name: project page & videos
+      - name: project page
         href: adacat/index.html
       - name: arXiv
         href: https://arxiv.org/abs/2208.02246
@@ -66,6 +68,8 @@ papers:
         href: https://github.com/ColinQiyangLi/AdaCat
       - name: lib
         href: https://github.com/ColinQiyangLi/AdaCat-pip
+      - name: tweet
+        href: https://x.com/qiyang_li/status/1555250993058574336?s=20
     description: 
     highlighted: true
     nogif: false
@@ -108,7 +112,7 @@ papers:
         href: https://www.cs.toronto.edu/~jlucas/
       - name: Roger Grosse
         href: https://www.cs.toronto.edu/~rgrosse/
-      - name: Jorn-Henrik Jacobsen
+      - name: "Jörn-Henrik Jacobsen"
         href: https://jhjacobsen.github.io/
     conference:
       name: Neural Information Processing Systems (NeurIPS)
@@ -134,7 +138,7 @@ papers:
         href: https://www.cs.toronto.edu/~jennybao/
       - name: Sageev Oore
         href: https://web.cs.dal.ca/~oore/
-      - name: Roger B. Grosse
+      - name: Roger Grosse
         href: https://www.cs.toronto.edu/~rgrosse/
     conference:
       name: International Conference on Learning Representations (ICLR)
@@ -161,7 +165,7 @@ papers:
         href: https://scholar.google.ca/citations?user=YDCsS5EAAAAJ&hl=en
       - name: Quinlan Sykora
         href: https://scholar.google.com/citations?user=QKNeRFsAAAAJ&hl=en
-      - name: Angela P. Schoellig
+      - name: Angela Schoellig
         href: https://www.dynsyslab.org/prof-angela-schoellig/
     conference:
       name: Preprint
@@ -185,9 +189,9 @@ papers:
         href: https://ziningzhu.github.io/
       - name: Xuchan Bao
         href: https://www.cs.toronto.edu/~jennybao/
-      - name: Mohamed K. Helwa
+      - name: Mohamed Helwa
         href: https://scholar.google.ca/citations?user=ewqmB6sAAAAJ&hl=en
-      - name: Angela P. Schoellig
+      - name: Angela Schoellig
         href: https://www.dynsyslab.org/prof-angela-schoellig/
     conference:
       name: International Conference on Robotics and Automation (ICRA)
@@ -195,8 +199,6 @@ papers:
     links:
       - name: arXiv
         href: https://arxiv.org/abs/1610.06283
-      - name: poster
-        href: images/lexa_poster.pdf
       - name: video (1 min)
         href: https://youtu.be/r1WnMUZy9-Y
     description: 
