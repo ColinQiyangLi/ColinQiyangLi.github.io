@@ -36,19 +36,21 @@ papers:
     authors:
       - me: true
       - name: Xintong Du
-        href: 
+        href: https://ca.linkedin.com/in/xintong-du-tracy
       - name: Yizhou Huang
-        href: 
+        href: https://scholar.google.ca/citations?user=YDCsS5EAAAAJ&hl=en
       - name: Quinlan Sykora
-        href:
+        href: https://scholar.google.com/citations?user=QKNeRFsAAAAJ&hl=en
       - name: Angela P. Schoellig
         href: https://www.dynsyslab.org/prof-angela-schoellig/
     conference:
       name: Preprint
       year: 2017
     links:
+      - name: arXiv
+        href: https://arxiv.org/abs/1709.06620
     description:
-    highlighted: true
+    highlighted: false
     nogif: true
 
   - name: timbretron
@@ -56,17 +58,17 @@ papers:
       link: https://arxiv.org/pdf/1811.09620.pdf
       name: "Timbretron: A WaveNet(CycleGAN(CQT(Audio))) Pipeline for Musical Timbre Transfer"
     authors:
-      - name: Sichong Huang
-        href: 
+      - name: Sicong Huang
+        href: https://www.cs.toronto.edu/~huang/
       - me: true
       - name: Cem Anil
-        href: 
+        href: https://www.cs.toronto.edu/~anilcem/
       - name: Xuchan Bao
-        href: 
+        href: https://www.cs.toronto.edu/~jennybao/
       - name: Sageev Oore
-        href: 
+        href: https://web.cs.dal.ca/~oore/
       - name: Roger B. Grosse
-        href: 
+        href: https://www.cs.toronto.edu/~rgrosse/
     conference:
       name: International Conference on Learning Representations (ICLR)
       year: 2019
@@ -75,7 +77,7 @@ papers:
         href: https://arxiv.org/abs/1811.09620
       - name: video (7 min)
         href: https://youtu.be/YQAupr7JxNY?si=aXzKOfVJ6YCGL8aq
-    description: Timbretron converts audio from one instrument to another while preserving the content.
+    description: 
     highlighted: false
     nogif: true
 
@@ -90,53 +92,53 @@ papers:
         star: true
         href: 
       - name: Cem Anil
-        href: 
+        href: https://www.cs.toronto.edu/~anilcem/
       - name: James Lucas
-        href: 
+        href: https://www.cs.toronto.edu/~jlucas/
       - name: Roger Grosse
-        href: 
+        href: https://www.cs.toronto.edu/~rgrosse/
       - name: Jorn-Henrik Jacobsen
-        href: 
+        href: https://jhjacobsen.github.io/
     conference:
       name: Neural Information Processing Systems (NeurIPS)
       year: 2019
     links:
       - name: arXiv
         href: https://arxiv.org/abs/1911.00937
-    description: BCOP is a simple way to parameterize orthogonal 2-D convolution kernels.
+    description: 
     highlighted: true
     nogif: true
 
   - name: tto
     title:
-      link: https://arxiv.org/pdf/2011.06507.pdf
+      link: https://arxiv.org/pdf/2106.02039.pdf
       name: "Offline reinforcement learning as one big sequence modeling problem"
     authors:
       - name: Michael Janner
-        href: 
+        href: https://jannerm.github.io/
       - me: true
       - name: Sergey Levine
         href: https://people.eecs.berkeley.edu/~svlevine
     conference:
-      name: Conference on Robot Learning (CoRL)
-      year: 2020 (<oral>oral presentation</oral>, 4% acceptance rate)
+      name: Conference on Neural Information Processing Systems (NeurIPS)
+      year: 2021
     links:
       - name: arXiv
         href: https://arxiv.org/abs/2106.02039
-    description: Sequence modeling on discretized state, action, reward tokens yields a good dynamics model for model-based planning.
+    description: 
     highlighted: false
     nogif: true
 
   - name: adacat
     title:
-      link: https://arxiv.org/pdf/2006.13205.pdf
+      link: https://arxiv.org/pdf/2208.02246.pdf
       name: "AdaCat: Adaptive categorical discretization for autoregressive models"
     authors:
       - me: true
       - name: Ajay Jain
-        href: 
+        href: https://www.ajayjain.net/
       - name: Pieter Abbeel
-        href:
+        href: http://people.eecs.berkeley.edu/~pabbeel/
     conference:
       name: Uncertainty in Artificial Intelligence (UAI)
       year: 2022
@@ -149,7 +151,7 @@ papers:
         href: https://github.com/ColinQiyangLi/AdaCat
       - name: lib
         href: https://github.com/ColinQiyangLi/AdaCat-pip
-    description: Autoregressive model + discretization with differentiable bin sizes yield a good generative model.
+    description: 
     highlighted: true
     nogif: true
 
@@ -160,9 +162,9 @@ papers:
     authors:
       - me: true
       - name: Aviral Kumar
-        href: 
+        href: https://aviralkumar2907.github.io/
       - name: Ilya Kostrikov
-        href: 
+        href: https://www.kostrikov.xyz/
       - name: Sergey Levine
         href: https://people.eecs.berkeley.edu/~svlevine
     conference:
@@ -170,20 +172,21 @@ papers:
       year: 2023
     links:
       - name: arXiv
-        href: https://arxiv.org/abs/1912.12773
-    description: We found that empirical held-out temporal-difference error can often be a descent predictor for how well an actor-critic RL agent performs.
+        href: https://arxiv.org/abs/2304.10466
+    description: 
     highlighted: true
     nogif: true
 
   - name: rollin
     title:
-      link: 
+      link: https://arxiv.org/pdf/2212.12809.pdf
       name: Understanding the Complexity Gains of Single-task RL with a Curriculum
     authors:
       - me: true
         star: true
       - name: Yuexiang Zhai
-        href: 
+        star: true
+        href: https://yx-s-z.github.io/
       - name: Sergey Levine
         href: https://people.eecs.berkeley.edu/~svlevine
     conference:
@@ -191,7 +194,7 @@ papers:
       year: 2023
     links:
       - name: arXiv
-        href: https://arxiv.org/abs/2005.05960
-    description: Sample complexity analysis for entropy-regularized stochastic policy gradient under a reward curriculum
+        href: https://arxiv.org/abs/2212.12809
+    description: 
     highlighted: false
     nogif: true
