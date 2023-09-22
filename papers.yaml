@@ -1,0 +1,197 @@
+papers:
+  - name: dnnquad
+    title:
+      link: https://arxiv.org/pdf/1610.06283.pdf
+      name: Deep neural networks for improved, impromptu trajectory tracking of quadrotors
+    authors:
+      - me: true
+      - name: Jingxing Qian
+        href: https://scholar.google.ca/citations?user=OZk7X80AAAAJ&hl=en
+      - name: Zining Zhu
+        href: https://ziningzhu.github.io/
+      - name: Xuchan Bao
+        href: https://www.cs.toronto.edu/~jennybao/
+      - name: Mohamed K. Helwa
+        href: https://scholar.google.ca/citations?user=ewqmB6sAAAAJ&hl=en
+      - name: Angela P. Schoellig
+        href: https://www.dynsyslab.org/prof-angela-schoellig/
+    conference:
+      name: International Conference on Robotics and Automation (ICRA)
+      year: 2017
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/1610.06283
+      - name: poster
+        href: images/lexa_poster.pdf
+      - name: video (1 min)
+        href: https://youtu.be/r1WnMUZy9-Y
+    description: 
+    highlighted: true
+    nogif: true
+
+  - name: swarm
+    title:
+      link: https://arxiv.org/pdf/1709.06620.pdf
+      name: Learning of Coordination Policies for Robotic Swarms
+    authors:
+      - me: true
+      - name: Xintong Du
+        href: 
+      - name: Yizhou Huang
+        href: 
+      - name: Quinlan Sykora
+        href:
+      - name: Angela P. Schoellig
+        href: https://www.dynsyslab.org/prof-angela-schoellig/
+    conference:
+      name: Preprint
+      year: 2017
+    links:
+    description:
+    highlighted: true
+    nogif: true
+
+  - name: timbretron
+    title:
+      link: https://arxiv.org/pdf/1811.09620.pdf
+      name: "Timbretron: A WaveNet(CycleGAN(CQT(Audio))) Pipeline for Musical Timbre Transfer"
+    authors:
+      - name: Sichong Huang
+        href: 
+      - me: true
+      - name: Cem Anil
+        href: 
+      - name: Xuchan Bao
+        href: 
+      - name: Sageev Oore
+        href: 
+      - name: Roger B. Grosse
+        href: 
+    conference:
+      name: International Conference on Learning Representations (ICLR)
+      year: 2019
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/1811.09620
+      - name: video (7 min)
+        href: https://youtu.be/YQAupr7JxNY?si=aXzKOfVJ6YCGL8aq
+    description: Timbretron converts audio from one instrument to another while preserving the content.
+    highlighted: false
+    nogif: true
+
+  - name: bcop
+    title:
+      link: https://arxiv.org/pdf/1911.00937.pdf
+      name: Preventing Gradient Attenuation in Lipschitz Constrained Convolutional Networks
+    authors:
+      - me: true
+        star: true
+      - name: Saminul Haque
+        star: true
+        href: 
+      - name: Cem Anil
+        href: 
+      - name: James Lucas
+        href: 
+      - name: Roger Grosse
+        href: 
+      - name: Jorn-Henrik Jacobsen
+        href: 
+    conference:
+      name: Neural Information Processing Systems (NeurIPS)
+      year: 2019
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/1911.00937
+    description: BCOP is a simple way to parameterize orthogonal 2-D convolution kernels.
+    highlighted: true
+    nogif: true
+
+  - name: tto
+    title:
+      link: https://arxiv.org/pdf/2011.06507.pdf
+      name: "Offline reinforcement learning as one big sequence modeling problem"
+    authors:
+      - name: Michael Janner
+        href: 
+      - me: true
+      - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
+    conference:
+      name: Conference on Robot Learning (CoRL)
+      year: 2020 (<oral>oral presentation</oral>, 4% acceptance rate)
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/2106.02039
+    description: Sequence modeling on discretized state, action, reward tokens yields a good dynamics model for model-based planning.
+    highlighted: false
+    nogif: true
+
+  - name: adacat
+    title:
+      link: https://arxiv.org/pdf/2006.13205.pdf
+      name: "AdaCat: Adaptive categorical discretization for autoregressive models"
+    authors:
+      - me: true
+      - name: Ajay Jain
+        href: 
+      - name: Pieter Abbeel
+        href:
+    conference:
+      name: Uncertainty in Artificial Intelligence (UAI)
+      year: 2022
+    links:
+      - name: project page & videos
+        href: adacat/index.html
+      - name: arXiv
+        href: https://arxiv.org/abs/2208.02246
+      - name: code
+        href: https://github.com/ColinQiyangLi/AdaCat
+      - name: lib
+        href: https://github.com/ColinQiyangLi/AdaCat-pip
+    description: Autoregressive model + discretization with differentiable bin sizes yield a good generative model.
+    highlighted: true
+    nogif: true
+
+  - name: avtd
+    title:
+      link: https://arxiv.org/pdf/2304.10466.pdf
+      name: Efficient Deep Reinforcement Learning Requires Regulating Overfitting
+    authors:
+      - me: true
+      - name: Aviral Kumar
+        href: 
+      - name: Ilya Kostrikov
+        href: 
+      - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
+    conference:
+      name: International Conference on Learning Representations (ICLR)
+      year: 2023
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/1912.12773
+    description: We found that empirical held-out temporal-difference error can often be a descent predictor for how well an actor-critic RL agent performs.
+    highlighted: true
+    nogif: true
+
+  - name: rollin
+    title:
+      link: 
+      name: Understanding the Complexity Gains of Single-task RL with a Curriculum
+    authors:
+      - me: true
+        star: true
+      - name: Yuexiang Zhai
+        href: 
+      - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
+    conference:
+      name: International Conference on Machine Learning (ICML)
+      year: 2023
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/2005.05960
+    description: Sample complexity analysis for entropy-regularized stochastic policy gradient under a reward curriculum
+    highlighted: false
+    nogif: true
