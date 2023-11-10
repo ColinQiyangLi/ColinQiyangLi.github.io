@@ -1,5 +1,30 @@
 papers:
 
+  - name: explore
+    title:
+      link: https://arxiv.org/pdf/2311.05067.pdf
+      name: Efficient Deep Reinforcement Learning Requires Regulating Overfitting
+    authors:
+      - me: true
+        star: true
+      - name: Jason Zhang
+        star: true
+      - name: Dibya Ghosh
+        href: https://dibyaghosh.com/
+      - name: Amy Zhang
+        href: https://amyzhang.github.io/
+      - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
+    conference:
+      name: Conference on Neural Information Processing Systems (NeurIPS)
+      year: 2023
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/2311.05067
+    description: 
+    highlighted: true
+    nogif: true
+
   - name: avtd
     title:
       link: https://arxiv.org/pdf/2304.10466.pdf
@@ -27,7 +52,7 @@ papers:
   - name: rollin
     title:
       link: https://arxiv.org/pdf/2212.12809.pdf
-      name: Understanding the Complexity Gains of Single-task RL with a Curriculum
+      name: Understanding the Complexity Gains of Single-Task RL with a Curriculum
     authors:
       - me: true
         star: true
