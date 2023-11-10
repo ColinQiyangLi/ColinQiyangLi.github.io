@@ -3,7 +3,7 @@ papers:
   - name: explore
     title:
       link: https://arxiv.org/pdf/2311.05067.pdf
-      name: Efficient Deep Reinforcement Learning Requires Regulating Overfitting
+      name: Accelerating Exploration with Unlabeled Prior Data
     authors:
       - me: true
         star: true
