@@ -21,6 +21,10 @@ papers:
     links:
       - name: arXiv
         href: https://arxiv.org/abs/2311.05067
+      - name: code
+        href: https://github.com/facebookresearch/ExPLORe
+      - name: tweet
+        href: https://x.com/qiyang_li/status/1724563278377238847?s=20
     description: 
     highlighted: true
     nogif: true
