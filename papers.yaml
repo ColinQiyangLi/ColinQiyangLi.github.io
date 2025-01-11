@@ -1,4 +1,108 @@
 papers:
+  - name: rldg
+    title:
+      link: https://arxiv.org/pdf/2412.09858
+      name: 'RLDG: Robotic Generalist Policy Distillation via Reinforcement Learning'
+    authors:
+      - name: Charles Xu
+      - me: true
+      - name: Jianlan Luo
+        href: https://people.eecs.berkeley.edu/~jianlanluo/
+      - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
+    conference:
+      name: Pre-print (arXiv)
+      year: 2024
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/2412.09858
+      - name: website
+        href: https://generalist-distillation.github.io/
+    description: 
+    highlighted: false
+    nogif: true
+  
+  - name: wsrl
+    title:
+      link: https://arxiv.org/pdf/2412.07762.pdf
+      name: Efficient Online Reinforcement Learning Fine-Tuning Need Not Retain Offline Data
+    authors:
+      - name: Zhiyuan Zhou
+        star: true
+      - name: Andy Peng
+        star: true
+      - me: true
+      - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
+      - name: Aviral Kumar
+        href: https://aviralkumar2907.github.io/
+    conference:
+      name: Pre-print (arXiv)
+      year: 2024
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/2412.07762
+      - name: code
+        href: https://github.com/zhouzypaul/wsrl
+      - name: website
+        href: https://zhouzypaul.github.io/wsrl/
+    description: 
+    highlighted: false
+    nogif: true
+  
+  - name: supe
+    title:
+      link: https://arxiv.org/pdf/2410.18076.pdf
+      name: Leveraging Skills from Unlabeled Prior Data for Efficient Online Exploration
+    authors:
+      - name: Max Wilcoxson
+        star: true
+      - me: true
+        star: true
+      - name: Kevin Frans
+        href: https://kvfrans.com/
+      - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
+    conference:
+      name: Pre-print (arXiv)
+      year: 2024
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/2410.18076
+      - name: code
+        href: https://github.com/rail-berkeley/supe
+    description: 
+    highlighted: true
+    nogif: true
+  
+  - name: hato
+    title:
+      link: https://arxiv.org/pdf/2404.16823.pdf
+      name: Learning Visuotactile Skills with Two Multifingered Hands
+    authors:
+      - name: Toru Lin
+      - name: Yu Zhang
+        star: true
+      - me: true
+        star: true
+      - name: Haozhi Qi
+        star: true
+      - name: Brent Yi
+      - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
+      - name: Jitendra Malik
+        href: https://people.eecs.berkeley.edu/~malik/
+    conference:
+      name: Pre-print (arXiv)
+      year: 2024
+    links:
+      - name: arXiv
+        href: http://arxiv.org/abs/2404.16823
+      - name: code
+        href: https://github.com/toruowo/hato
+    description: 
+    highlighted: true
+    nogif: true
 
   - name: explore
     title:
