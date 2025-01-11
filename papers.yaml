@@ -29,6 +29,7 @@ papers:
     authors:
       - name: Zhiyuan Zhou
         star: true
+        href: https://zhouzypaul.github.io/
       - name: Andy Peng
         star: true
       - me: true
@@ -81,13 +82,16 @@ papers:
       name: Learning Visuotactile Skills with Two Multifingered Hands
     authors:
       - name: Toru Lin
+        href: https://toruowo.github.io/
       - name: Yu Zhang
         star: true
       - me: true
         star: true
       - name: Haozhi Qi
         star: true
+        href: https://haozhi.io/
       - name: Brent Yi
+        href: https://scholar.google.com/citations?user=Ecy6lXwAAAAJ&hl=en
       - name: Sergey Levine
         href: https://people.eecs.berkeley.edu/~svlevine
       - name: Jitendra Malik
