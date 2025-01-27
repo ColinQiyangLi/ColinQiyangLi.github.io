@@ -1,4 +1,29 @@
 papers:
+  - name: supe
+    title:
+      link: https://arxiv.org/pdf/2410.18076.pdf
+      name: Leveraging Skills from Unlabeled Prior Data for Efficient Online Exploration
+    authors:
+      - name: Max Wilcoxson
+        star: true
+      - me: true
+        star: true
+      - name: Kevin Frans
+        href: https://kvfrans.com/
+      - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
+    conference:
+      name: Pre-print (arXiv)
+      year: 2024
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/2410.18076
+      - name: code
+        href: https://github.com/rail-berkeley/supe
+    description: 
+    highlighted: true
+    nogif: true
+
   - name: rldg
     title:
       link: https://arxiv.org/pdf/2412.09858
@@ -38,8 +63,8 @@ papers:
       - name: Aviral Kumar
         href: https://aviralkumar2907.github.io/
     conference:
-      name: Pre-print (arXiv)
-      year: 2024
+      name: International Conference on Learning Representations (ICLR)
+      year: 2025
     links:
       - name: arXiv
         href: https://arxiv.org/abs/2412.07762
@@ -47,31 +72,6 @@ papers:
         href: https://github.com/zhouzypaul/wsrl
       - name: website
         href: https://zhouzypaul.github.io/wsrl/
-    description: 
-    highlighted: false
-    nogif: true
-  
-  - name: supe
-    title:
-      link: https://arxiv.org/pdf/2410.18076.pdf
-      name: Leveraging Skills from Unlabeled Prior Data for Efficient Online Exploration
-    authors:
-      - name: Max Wilcoxson
-        star: true
-      - me: true
-        star: true
-      - name: Kevin Frans
-        href: https://kvfrans.com/
-      - name: Sergey Levine
-        href: https://people.eecs.berkeley.edu/~svlevine
-    conference:
-      name: Pre-print (arXiv)
-      year: 2024
-    links:
-      - name: arXiv
-        href: https://arxiv.org/abs/2410.18076
-      - name: code
-        href: https://github.com/rail-berkeley/supe
     description: 
     highlighted: true
     nogif: true
@@ -97,13 +97,15 @@ papers:
       - name: Jitendra Malik
         href: https://people.eecs.berkeley.edu/~malik/
     conference:
-      name: Pre-print (arXiv)
-      year: 2024
+      name: International Conference on Robotics and Automation (ICRA)
+      year: 2025
     links:
       - name: arXiv
         href: http://arxiv.org/abs/2404.16823
       - name: code
         href: https://github.com/toruowo/hato
+      - name: website
+        href: https://toruowo.github.io/hato/
     description: 
     highlighted: true
     nogif: true
