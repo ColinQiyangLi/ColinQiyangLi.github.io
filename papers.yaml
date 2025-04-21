@@ -24,6 +24,28 @@ papers:
     highlighted: true
     nogif: true
 
+  - name: fql
+    title:
+      link: https://arxiv.org/pdf/2412.09858
+      name: 'Flow Q-Learning'
+    authors:
+      - name: Seohong Park
+        href: https://seohong.me/
+      - me: true
+      - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
+    conference:
+      name: Pre-print (arXiv)
+      year: 2024
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/2502.02538
+      - name: website
+        href: https://seohong.me/projects/fql/
+    description: 
+    highlighted: true
+    nogif: true
+
   - name: rldg
     title:
       link: https://arxiv.org/pdf/2412.09858
