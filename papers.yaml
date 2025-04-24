@@ -40,6 +40,8 @@ papers:
     links:
       - name: arXiv
         href: https://arxiv.org/abs/2502.02538
+      - name: code
+        href: https://github.com/seohongpark/fql
       - name: website
         href: https://seohong.me/projects/fql/
     description: 
