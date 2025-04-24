@@ -1,4 +1,28 @@
 papers:
+  - name: fql
+    title:
+      link: https://arxiv.org/pdf/2412.09858
+      name: 'Flow Q-Learning'
+    authors:
+      - name: Seohong Park
+        href: https://seohong.me/
+      - me: true
+      - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
+    conference:
+      name: Pre-print (arXiv)
+      year: 2024
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/2502.02538
+      - name: code
+        href: https://github.com/seohongpark/fql
+      - name: website
+        href: https://seohong.me/projects/fql/
+    description: 
+    highlighted: true
+    nogif: true
+
   - name: supe
     title:
       link: https://arxiv.org/pdf/2410.18076.pdf
@@ -24,30 +48,6 @@ papers:
     highlighted: true
     nogif: true
 
-  - name: fql
-    title:
-      link: https://arxiv.org/pdf/2412.09858
-      name: 'Flow Q-Learning'
-    authors:
-      - name: Seohong Park
-        href: https://seohong.me/
-      - me: true
-      - name: Sergey Levine
-        href: https://people.eecs.berkeley.edu/~svlevine
-    conference:
-      name: Pre-print (arXiv)
-      year: 2024
-    links:
-      - name: arXiv
-        href: https://arxiv.org/abs/2502.02538
-      - name: code
-        href: https://github.com/seohongpark/fql
-      - name: website
-        href: https://seohong.me/projects/fql/
-    description: 
-    highlighted: true
-    nogif: true
-
   - name: rldg
     title:
       link: https://arxiv.org/pdf/2412.09858
@@ -60,15 +60,15 @@ papers:
       - name: Sergey Levine
         href: https://people.eecs.berkeley.edu/~svlevine
     conference:
-      name: Pre-print (arXiv)
-      year: 2024
+      name: Robotics Science and Systems (RSS)
+      year: 2025
     links:
       - name: arXiv
         href: https://arxiv.org/abs/2412.09858
       - name: website
         href: https://generalist-distillation.github.io/
     description: 
-    highlighted: false
+    highlighted: true
     nogif: true
   
   - name: wsrl
@@ -234,7 +234,7 @@ papers:
       - name: tweet
         href: https://x.com/qiyang_li/status/1555250993058574336?s=20
     description: 
-    highlighted: true
+    highlighted: false
     nogif: false
 
   - name: tto
@@ -284,7 +284,7 @@ papers:
       - name: arXiv
         href: https://arxiv.org/abs/1911.00937
     description: 
-    highlighted: true
+    highlighted: false
     nogif: true
 
   - name: timbretron
@@ -365,5 +365,5 @@ papers:
       - name: video (1 min)
         href: https://youtu.be/r1WnMUZy9-Y
     description: 
-    highlighted: true
+    highlighted: false
     nogif: true
