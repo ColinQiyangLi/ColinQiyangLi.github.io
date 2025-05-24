@@ -1,7 +1,7 @@
 papers:
   - name: fql
     title:
-      link: https://arxiv.org/pdf/2412.09858
+      link: https://arxiv.org/pdf/2502.02538
       name: 'Flow Q-Learning'
     authors:
       - name: Seohong Park
