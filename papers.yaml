@@ -13,8 +13,8 @@ papers:
     links:
       - name: arXiv
         href: https://arxiv.org/abs/2507.07969
-      # - name: project page
-      #   href: qc/index.html
+      - name: website
+        href: qc/index.html
     highlighted: true
     nogif: true
 
@@ -244,8 +244,6 @@ papers:
       name: Uncertainty in Artificial Intelligence (UAI)
       year: 2022
     links:
-      - name: project page
-        href: adacat/index.html
       - name: arXiv
         href: https://arxiv.org/abs/2208.02246
       - name: code
@@ -254,6 +252,8 @@ papers:
         href: https://github.com/ColinQiyangLi/AdaCat-pip
       - name: tweet
         href: https://x.com/qiyang_li/status/1555250993058574336?s=20
+      - name: website
+        href: adacat/index.html
     description: 
     highlighted: false
     nogif: false
