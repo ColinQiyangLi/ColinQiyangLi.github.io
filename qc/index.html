@@ -77,55 +77,47 @@
   </div>
 </section>
 
-
 <section class="hero teaser" style="padding-top: 0;">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img id="teaser" src="teaser.png" style="width: 50%;" alt="teaser figure">
-      <img id="teaser" src="agg-ablation.svg" style="width: 49%;" alt="teaser figure">
+    <div class="hero-body" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1%;">
+      <img src="teaser.png" alt="teaser figure" style="width: 49%; max-width: 100%;" />
+      <img src="agg-ablation.svg" alt="teaser figure" style="width: 49%; max-width: 100%;" />
     </div>
 
-    <!-- <div class="column">
-      <h3 class="title is-2"> Q-Chunking </h3>
+    <div class="container is-max-desktop has-text-centered">
+    <div class="custom-grey-box">
+      <h2 class="title is-2" style="color: #CB297B;"> TL;DR </h2>
+      <div class="columns">
+        <div class="column">
+          <div class="content has-text-justified">
+            <p class="is-size-5">
+              <strong>Q-chunking</strong> runs RL on a temporally extended action (<b>action chunking</b>) space
+              with an <b>expressive behavior constraint</b> to leverage prior data for 
+              improved <strong>exploration</strong> and <strong>online sample efficiency</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="column">
-      <h3 class="title is-2"> Baseline </h3>
-    </div> -->
+    </div>
 
-    <table width="100%">
-      <tr>
-        <td align="center" valign="top" width="50%">
-          <h3 class="title is-2" style="color: #CB297B;">Q-Chunking</h3>
-        </td>
-        <td align="center" valign="top" width="50%">
-          <h3 class="title is-2" style="color: #0076ba;">Baseline</h3>
-        </td>
-      </tr>
-    
-      <tr>
-        <td colspan="2">
-          <video width="100%" controls autoplay muted loop>
-            <source src="trajectory.mp4" type="video/mp4" />
-          </video>
-        </td>
-      </tr>
-    
-      <tr>
-        <td align="left" valign="top" width="50%">
-          <video width="100%" controls autoplay muted loop>
-            <source src="h5-avc1-late-highres.mp4" type="video/mp4" />
-          </video>
-        </td>
-        <td align="left" valign="top" width="50%">
-          <video width="100%" controls autoplay muted loop>
-            <source src="h1-avc1-late-highres.mp4" type="video/mp4" />
-          </video>
-        </td>
-      </tr>
-    </table>
+    <div class="video-section" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem;">
+      <div style="flex: 1 1 100%; max-width: 49%; text-align: center;">
+        <h3 class="title is-2" style="color: #CB297B;">with Q-chunking</h3>
+        <video width="100%" controls autoplay muted loop>
+          <source src="h5.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div style="flex: 1 1 100%; max-width: 49%; text-align: center;">
+        <h3 class="title is-2" style="color: #0076ba;">without Q-chunking</h3>
+        <video width="100%" controls autoplay muted loop>
+          <source src="h1.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
   </div>
 </section>
-
 
 <section class="section">
   <div class="container is-max-desktop has-text-centered">
@@ -159,7 +151,7 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">Q-Chunking = Action Chunking RL + Behavior Constraint</h2>
+    <h2 class="title is-3">Q-chunking = Action Chunking RL + Behavior Constraint</h2>
     <div class="columns">
       <div class="column">
         <div class="content has-text-justified">
@@ -175,12 +167,9 @@
             that cannot be well captured by a Markovian behavior constraint. As a result, our policy is able to generate 
             <strong>temporally coherent actions</strong> for more effective online exploration.
           </p>
-
-          <!-- <div style="display: flex; justify-content: center; gap: 1%; width: 99%; margin: 0 auto; margin-bottom: 20px;"> -->
-            
-            
+          
         <div class="custom-grey-box">
-            <h4>Standard TD-based RL</h4>
+            <h3>Standard TD-based RL</h3>
 
             <img src="normal.svg" style="width: 75%;" alt="RLPD-AC equations">
             <!-- </div>
@@ -188,48 +177,11 @@
         </div>
 
         <div class="custom-blue-box">
-          <h4>Q-Chunking</h4>
+          <h3>Q-chunking</h3>
 
           <img src="qc.svg" style="width: 100%;" alt="RLPD equations">
         </div>
 
-        <!-- \begin{align}
-L(\theta) &= \mathbb{E}_{\textcolor[RGB]{0,118,186}{\mathbf{a}_{t+h:t+2h}} \sim\pi_\psi(\cdot | s_{t+h}) }\left[\left(Q_{\theta}(s_t, {\textcolor[RGB]{0,118,186}{\mathbf{a}_{t:t+h}}}) - \textcolor[RGB]{0,118,186}{\sum_{t'=t}^{t+h-1}\gamma^{t'-t}r_{t'}} - Q_{\bar \theta}(s_{t+h}, \textcolor[RGB]{0,118,186}{\mathbf{a}_{t+h:t+2h}})\right)^2\right]  \\
-L(\psi) &= -\mathbb{E}_{\textcolor[RGB]{0,118,186}{\mathbf{a}_{t:t+h}} \sim\pi_\psi(\cdot | s_t) }\left[Q_\theta(s_t, {\textcolor[RGB]{0,118,186}{\mathbf{a}_{t:t+h}}})\right] + \textcolor[RGB]{0,118,186}{\underbrace{D(\pi_\beta, \pi_\psi)}_{\text{behavior constraint}}}
-\end{align} -->
-        <!-- <div class="custom-purple-box">
-          <h4>Behavior Constraint</h4>
-
-          <img src="equation-bc.svg" style="width: 100%;" alt="RLPD equations">
-      </div> -->
-          <!-- </div> -->
-          <!-- \begin{align}
-L(\theta) &= \mathbb{E}_{\color{blue}a'_{t+h:t+2h} \sim\pi_\psi(\cdot | s_{t+h}) }\left[\left(Q_{\theta}(s_t, {\color{blue}a_{t:t+h}}) - {\color{blue}\sum_{t'=t}^{t+h-1}\gamma^{t'-t}r_{t'}} - Q_{\bar \theta}(s_{t+h}, {\color{blue}a'_{t+h:t+2h}})\right)^2\right]  \\
-L(\psi) &= -\mathbb{E}_{{\color{blue}a'_{t:t+h}} \sim\pi_\psi(\cdot | s_t) }\left[Q_\theta(s_t, {\color{blue}a'_{t:t+h}})\right]
-\end{align} -->
-
-<!-- \begin{align}
-L(\theta) &= \mathbb{E}_{\textcolor[RGB]{203,41,123}{\mathbf{a}_{t+h:t+2h}} \sim\pi_\psi(\cdot | s_{t+h}) }\left[\left(Q_{\theta}(s_t, {\textcolor[RGB]{203,41,123}{\mathbf{a}_{t:t+h}}}) - \textcolor[RGB]{203,41,123}{\sum_{t'=t}^{t+h-1}\gamma^{t'-t}r_{t'}} - Q_{\bar \theta}(s_{t+h}, \textcolor[RGB]{203,41,123}{\mathbf{a}_{t+h:t+2h}})\right)^2\right]  \\
-L(\psi) &= -\mathbb{E}_{\textcolor[RGB]{203,41,123}{\mathbf{a}_{t:t+h}} \sim\pi_\psi(\cdot | s_t) }\left[Q_\theta(s_t, {\textcolor[RGB]{203,41,123}{\mathbf{a}_{t:t+h}}})\right]
-\end{align} -->
-<!-- \begin{align}
-L(\theta) &= \mathbb{E}_{a'_{t+1} \sim\pi_\psi(\cdot | s_{t+1}) }\left[\left(Q_{\theta}(s_t, a_t) - r_t - Q_{\bar \theta}(s_{t+1}, a'_{t+1})\right)^2\right]  \\
-L(\psi) &= -\mathbb{E}_{a'_t \sim\pi_\psi(\cdot | s_t) }\left[Q_\theta(s_t, a'_t)\right]
-\end{align} -->
-          <!-- <p>
-            We tested this idea on a strong online RL method, <b>RLPD</b> (<a href="https://arxiv.org/abs/2302.02948">Ball<sup>*</sup>, Smith<sup>*</sup>, Kostrikov<sup>*</sup> et al., 2023</a>). 
-            While this simple approach yields some non-trivial improvements on some of the hardest domains that we have tested on,
-            it hurts on the simpler ones (see below, <b>RLPD-AC</b>: with action chunking, <b>RLPD</b>: without action chunking)
-          </p>
-          <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
-            <figure>
-              <img src="rlpd-all.svg" style="width: 100%;" alt="RLPD Results">
-              <figcaption>Naïve action chunking + RL fails. (The results are averages over 5 tasks and 5 seeds for each domain: cube-double/triple/quadruple)</figcaption>
-            </figure>
-          </div>
-          <p>
-            <b>What is going on here?</b>
-          </p> -->
         </div>
       </div>
     </div>
@@ -237,34 +189,28 @@ L(\psi) &= -\mathbb{E}_{a'_t \sim\pi_\psi(\cdot | s_t) }\left[Q_\theta(s_t, a'_t
 
   <section class="section">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">A Practical Q-Chunking Algorithm: QC</h2>
+      <h2 class="title is-3">A Practical Q-chunking Algorithm: QC</h2>
       <div class="columns">
         <div class="column">
           <div class="content has-text-justified">
-            <p>
-              <!-- To instantiate this idea, we propose (<strong>QC</strong>).  -->
-            </p>
             <p>
               We instantiate this idea as <strong>QC</strong>, a simple and effective offline-to-online RL algorithm. 
               We first train an expressive behavior cloning flow policy. Then, we implicitly represent a policy using samples from this behavior policy. 
               In particular, we use <b>Best-of-N (BFN)</b> sampling where we sample N actions and select the one that maximizes the Q function. 
               This is for both selecting actions during <b>online exploration</b> and <b>TD backup</b>. 
               QC can be summarized within only two lines: 
-              <!-- \mathbf{a}_t = \begin{bmatrix} a_t & a_{t+1} & \cdots & a_{t+h-1} \end{bmatrix} -->
             </p>
 
-            <div class="custom-blue-box">
-              <h4><b>Online exploration</b></h4>
+            <div class="custom-blue2-box">
+              <h3>Online exploration</h3>
               <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
                 <img src="emaq.svg" style="width: 100%;" alt="EMaQ equations"> 
               </div>
-              <!-- \begin{align}
-\mathbf{a}_{t:t+h}^\star \leftarrow {\arg\max}_{\mathbf a_{t:t+h} \in \{\mathbf a_{t:t+h}^1, \mathbf a_{t:t+h}^2, \cdots, \mathbf a_{t:t+h}^N\}} Q(s, \mathbf{a}),  \text{where }\{\mathbf{a}_{t:t+h}^1, \mathbf{a}_{t:t+h}^2, \cdots, \mathbf{a}_{t:t+h}^N\} \sim \pi_\beta(\cdot | s)
-\end{align} -->
-              <h4><b>TD backup</b></h4>
-            <div style="display: flex; justify-content: center; gap: 1%; width: 75%; margin: 0 auto; margin-bottom: 40px;">
-              <img src="qc-backup.svg" style="width: 99%;" alt="RLPD-AC equations"> 
-            </div>
+              
+              <h3>TD backup</h3>
+              <div style="display: flex; justify-content: center; gap: 1%; width: 75%; margin: 0 auto; margin-bottom: 40px;">
+                <img src="qc-backup.svg" style="width: 99%;" alt="RLPD-AC equations"> 
+              </div>
             </div>
             <p>
               Best-of-N sampling is not a new idea in RL and has been previously explored in many prior works with different implementation details 
@@ -274,25 +220,6 @@ L(\psi) &= -\mathbb{E}_{a'_t \sim\pi_\psi(\cdot | s_t) }\left[Q_\theta(s_t, a'_t
               However, using this idea in the context of online RL and action chunking is still under-explored. We found that 
               this incredibly simple implicit policy parameterization is quite effective at enforcing a behavior constraint while maximizing the value for an action chunking policy (see results below).
             </p> 
-              <!-- \begin{align}
-L(\theta) &= \mathbb{E}_{\substack{s_t, \mathbf{a}_t \sim D \\ \{\mathbf{a}^{i}_{t+h}\}_{i=1}^{M} \sim \pi_\beta(\cdot|s_{t+h})}} \left[\left(Q_\theta(s_t, \mathbf{a}_t) - \sum_{t'=1}^{h} \gamma^{t'}r_{t+t'} - \gamma^{h} Q_{\bar \theta}(s_{t+h}, {\arg\max}_{\mathbf a \in \{\mathbf a_{t+h}^{i}\}} Q(s, \mathbf{a}))\right)^2\right] \\
-L(\xi) &= \mathbb{E}_{s_t, \mathbf a_t \sim \mathcal{D}, \mathbf z \sim \mathcal{N}(0, \mathbf{I}_{Ah}), u \sim U([0, 1])} \left[\|\mathbf a_t - \mathbf z - f_\xi(s_t, \mathbf a_t u + \mathbf z (1 - u), u)\|^2_2\right] \\
-\pi_\beta(\cdot | s) &= \mathtt{ODE\_solve}(f_\xi(s, \mathbf{z}_u, u), u=0\rightarrow 1, \mathbf{z}_0 \sim \mathcal{N}(0, \mathbf{I}_{Ah}))
-\end{align} -->
-<!--
-\begin{align}
-L(\theta) &= \mathbb{E}\left[\left(Q_\theta(s_t, \mathbf{a}_{t:t+h}) - \sum_{t'=1}^{h} \gamma^{t'}r_{t+t'} - \gamma^{h} Q_{\bar \theta}(s_{t+h}, \textcolor[RGB]{0,118,186}{\mathbf{a}^\star_{t+h:t+2h}})\right)^2\right]
-\end{align} -->
-            <p>
-              <!-- <ol>
-                <li>The first line is the same TD loss for the temporally extended action space as above but with the action replaced by the result of the EMaQ operator under the behavior flow matching policy.</li>
-                <li>The second line is the standard flow-matching loss (e.g., Rectified Flow (<a href="https://arxiv.org/abs/2209.03003">Liu<sup>*</sup>, Gong<sup>*</sup>, et al., 2022</a>)).</li>
-                <li>The third line describes how the actions are being sampled from the behavior policy. We simply use Euler's method with a fixed step to do numerical integratation.</li>
-              </ol>
-               -->
-              <!-- <b>And that is it!</b> -->
-
-            </p>
           </div>
         </div>
       </div>
@@ -305,10 +232,7 @@ L(\theta) &= \mathbb{E}\left[\left(Q_\theta(s_t, \mathbf{a}_{t:t+h}) - \sum_{t'=
       <div class="column">
         <div class="content has-text-justified">
           <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
-          <figure>
             <img src="main-all-ablation.svg" style="width: 100%;" alt="Main Results">
-            <figcaption>1M offline training steps followed by 1M online training steps. <strong>QC</strong> outperforms all prior methods.</figcaption>
-          </figure>
           </div>
           <p>
             The design principles of (1) running RL with action chunking, and 
@@ -322,25 +246,8 @@ L(\theta) &= \mathbb{E}\left[\left(Q_\theta(s_t, \mathbf{a}_{t:t+h}) - \sum_{t'=
             BFN-n and FQL-n are n-step return baselines for QC and QC-FQL respectively.
           </p>
           <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
-            <figure>
             <img src="main-all.svg" style="width: 100%;" alt="Main Results">
-            <figcaption>1M offline training steps followed by 1M online training steps. <strong>QC-FQL</strong> outperforms <b>FQL</b> significantly</figcaption>
-          </figure>
           </div>
-          <!-- <p>
-            Our methods are also <b>fast</b>! QC-FQL incurs negligible additional computational cost on top of FQL for both offline and online. 
-            QC-BFN is more expensive because we need to sample more actions (32 in QC-BFN vs. 4 in BFN). 
-            This additional computational cost is not too bad if we look at the online run-time (one environment step + one agent update). 
-            All of our methods have a similar run-time compared to the RLPD baseline.
-          </p>
-           -->
-          <!-- <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;"> -->
-          <!-- <figure>
-            <img src="run-time-offline.svg" style="width: 50%;" alt="Run time">
-            <img src="run-time-online.svg" style="width: 49%;" alt="Run time">
-            <figcaption>Left: time per offline step (in ms). Right: time per online step (in ms).</figcaption>
-          </figure> -->
-          <!-- </div> -->
         </div>
       </div>
     </div>
