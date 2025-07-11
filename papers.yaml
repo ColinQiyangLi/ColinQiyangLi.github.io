@@ -1,4 +1,20 @@
 papers:
+  - name: qc
+    title: 
+      link: https://arxiv.org/pdf/2507.07969
+      name: Sample-Efficient Reinforcement Learning with Action Chunking
+    authors:
+      - me: true
+      - name: Zhiyuan Zhou
+      - name: Sergey Levine
+    conference:
+      name: Preprint
+      year: 2025
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/2507.07969
+      # - name: project page
+      #   href: qc/index.html
   - name: fql
     title:
       link: https://arxiv.org/pdf/2502.02538
