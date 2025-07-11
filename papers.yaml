@@ -13,6 +13,8 @@ papers:
     links:
       - name: arXiv
         href: https://arxiv.org/abs/2507.07969
+      - name: code
+        href: https://github.com/colinqiyangli/qc
       - name: website
         href: qc/index.html
     highlighted: true
