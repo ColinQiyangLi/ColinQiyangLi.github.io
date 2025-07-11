@@ -305,7 +305,10 @@ L(\theta) &= \mathbb{E}\left[\left(Q_\theta(s_t, \mathbf{a}_{t:t+h}) - \sum_{t'=
       <div class="column">
         <div class="content has-text-justified">
           <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
+          <figure>
             <img src="main-all-ablation.svg" style="width: 100%;" alt="Main Results">
+            <figcaption>1M offline training steps followed by 1M online training steps. <strong>QC</strong> outperforms all prior methods.</figcaption>
+          </figure>
           </div>
           <p>
             The design principles of (1) running RL with action chunking, and 
@@ -319,7 +322,10 @@ L(\theta) &= \mathbb{E}\left[\left(Q_\theta(s_t, \mathbf{a}_{t:t+h}) - \sum_{t'=
             BFN-n and FQL-n are n-step return baselines for QC and QC-FQL respectively.
           </p>
           <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
+            <figure>
             <img src="main-all.svg" style="width: 100%;" alt="Main Results">
+            <figcaption>1M offline training steps followed by 1M online training steps. <strong>QC-FQL</strong> outperforms <b>FQL</b> significantly</figcaption>
+          </figure>
           </div>
           <!-- <p>
             Our methods are also <b>fast</b>! QC-FQL incurs negligible additional computational cost on top of FQL for both offline and online. 
