@@ -2,7 +2,7 @@ papers:
   - name: qc
     title: 
       link: https://arxiv.org/pdf/2507.07969
-      name: Sample-Efficient Reinforcement Learning with Action Chunking
+      name: Reinforcement Learning with Action Chunking
     authors:
       - me: true
       - name: Zhiyuan Zhou
@@ -15,6 +15,9 @@ papers:
         href: https://arxiv.org/abs/2507.07969
       # - name: project page
       #   href: qc/index.html
+    highlighted: true
+    nogif: true
+
   - name: fql
     title:
       link: https://arxiv.org/pdf/2502.02538
@@ -60,6 +63,8 @@ papers:
         href: https://arxiv.org/abs/2410.18076
       - name: code
         href: https://github.com/rail-berkeley/supe
+      - name: website
+        href: https://wilcoxsonm21.github.io/supe/
     description: 
     highlighted: true
     nogif: true
