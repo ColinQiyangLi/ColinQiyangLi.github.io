@@ -307,7 +307,7 @@ papers:
       - name: arXiv
         href: https://arxiv.org/abs/1911.00937
     description: 
-    highlighted: false
+    highlighted: true
     nogif: true
 
   - name: timbretron
@@ -388,5 +388,5 @@ papers:
       - name: video (1 min)
         href: https://youtu.be/r1WnMUZy9-Y
     description: 
-    highlighted: false
+    highlighted: true
     nogif: true
