@@ -1,4 +1,27 @@
 papers:
+  - name: expo
+    title:
+      link: https://arxiv.org/pdf/2507.07986
+      name: "EXPO: Stable Reinforcement Learning with Expressive Policies"
+    authors:
+      - name: Perry Dong
+        href: https://pd-perry.github.io/
+      - me: true
+      - name: Dorsa Sadigh
+        href: https://dorsa.fyi/
+      - name: Chelsea Finn
+        href: https://ai.stanford.edu/~cbfinn/
+    conference:
+      name: Preprint
+      year: 2025
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/2507.07986
+      - name: website
+        href: https://pd-perry.github.io/expo-site/
+    highlighted: false
+    nogif: true
+
   - name: qc
     title: 
       link: https://arxiv.org/pdf/2507.07969
