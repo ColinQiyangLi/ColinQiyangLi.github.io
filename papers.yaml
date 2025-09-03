@@ -17,7 +17,7 @@ papers:
       - name: arXiv
         href: https://arxiv.org/abs/2507.07986
       - name: code
-        href: https://github.com/pd-perry/EXPO/tree/main/expo
+        href: https://github.com/pd-perry/EXPO
       - name: website
         href: https://pd-perry.github.io/expo-site/
     highlighted: false
