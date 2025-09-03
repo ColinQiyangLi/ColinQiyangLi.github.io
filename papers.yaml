@@ -114,7 +114,7 @@ papers:
       - name: website
         href: https://generalist-distillation.github.io/
     description: 
-    highlighted: true
+    highlighted: false
     nogif: true
   
   - name: wsrl
@@ -143,7 +143,7 @@ papers:
       - name: website
         href: https://zhouzypaul.github.io/wsrl/
     description: 
-    highlighted: true
+    highlighted: false
     nogif: true
   
   - name: hato
@@ -161,7 +161,7 @@ papers:
         star: true
         href: https://haozhi.io/
       - name: Brent Yi
-        href: https://scholar.google.com/citations?user=Ecy6lXwAAAAJ&hl=en
+        href: https://brentyi.github.io/
       - name: Sergey Levine
         href: https://people.eecs.berkeley.edu/~svlevine
       - name: Jitendra Malik
@@ -177,7 +177,7 @@ papers:
       - name: website
         href: https://toruowo.github.io/hato/
     description: 
-    highlighted: true
+    highlighted: false
     nogif: true
 
   - name: explore
@@ -230,7 +230,7 @@ papers:
       - name: tweet
         href: https://x.com/qiyang_li/status/1652340859793444864?s=20
     description: 
-    highlighted: true
+    highlighted: false
     nogif: true
 
   - name: rollin
