@@ -5,7 +5,6 @@ papers:
       name: "EXPO: Stable Reinforcement Learning with Expressive Policies"
     authors:
       - name: Perry Dong
-        href: https://pd-perry.github.io/
       - me: true
       - name: Dorsa Sadigh
         href: https://dorsa.fyi/
