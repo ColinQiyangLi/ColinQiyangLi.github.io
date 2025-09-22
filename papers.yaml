@@ -32,7 +32,7 @@ papers:
       - name: Zhiyuan Zhou
       - name: Sergey Levine
     conference:
-      name: Preprint
+      name: Conference on Neural Information Processing Systems (NeurIPS)
       year: 2025
     links:
       - name: arXiv
