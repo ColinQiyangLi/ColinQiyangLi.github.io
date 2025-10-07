@@ -5,6 +5,7 @@ papers:
       name: "EXPO: Stable Reinforcement Learning with Expressive Policies"
     authors:
       - name: Perry Dong
+        href: https://github.com/pd-perry
       - me: true
       - name: Dorsa Sadigh
         href: https://dorsa.fyi/
@@ -30,7 +31,9 @@ papers:
     authors:
       - me: true
       - name: Zhiyuan Zhou
+        href: https://zhouzypaul.github.io/
       - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
     conference:
       name: Conference on Neural Information Processing Systems (NeurIPS)
       year: 2025
@@ -75,6 +78,7 @@ papers:
     authors:
       - name: Max Wilcoxson
         star: true
+        href: https://scholar.google.com/citations?user=co22ajYAAAAJ&hl=en
       - me: true
         star: true
       - name: Kevin Frans
@@ -101,6 +105,7 @@ papers:
       name: 'RLDG: Robotic Generalist Policy Distillation via Reinforcement Learning'
     authors:
       - name: Charles Xu
+        href: https://charlesxu0124.github.io/
       - me: true
       - name: Jianlan Luo
         href: https://people.eecs.berkeley.edu/~jianlanluo/
@@ -128,6 +133,7 @@ papers:
         href: https://zhouzypaul.github.io/
       - name: Andy Peng
         star: true
+        href: https://scholar.google.com/citations?user=rhqRH0cAAAAJ&hl=en
       - me: true
       - name: Sergey Levine
         href: https://people.eecs.berkeley.edu/~svlevine
@@ -190,6 +196,7 @@ papers:
         star: true
       - name: Jason Zhang
         star: true
+        href: 
       - name: Dibya Ghosh
         href: https://dibyaghosh.com/
       - name: Amy Zhang
@@ -315,7 +322,7 @@ papers:
         star: true
       - name: Saminul Haque
         star: true
-        href: 
+        href: https://scholar.google.com/citations?user=D_D1DP8AAAAJ&hl=en
       - name: Cem Anil
         href: https://www.cs.toronto.edu/~anilcem/
       - name: James Lucas
