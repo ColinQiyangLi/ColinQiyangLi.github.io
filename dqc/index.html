@@ -144,26 +144,30 @@
         <div class="content has-text-justified">
           <p>
             In QC, the chunked critic is learned with n-step return backups, but there is a problem—the learned value function may not converge
-             to the correct value due to a subtle discrepancy:
+             to the correct value due to a subtle <b>discre</b><b2>pancy</b2>:
           </p>
           
         <div class="custom-purple-box">
             <h3>What QC should be doing..</h3>
-            <img src="equations/qc-should.svg" style="width: 100%;" alt="\begin{align}
+            <center>
+            <img src="equations/qc-should.svg" style="width: 92%;" alt="\begin{align}
 Q(s_t, a_{t:t+h}) \leftarrow \mathbb{E}_{\color[rgb]{0.7929,0.1602,0.4804} s_{t'+1} \sim T(\cdot \mid s_{t'}, a_{t'})}\left[\sum_{t'=t}^{t+h-1} \gamma^{t'-t}r(s_{t'}, a_{t'}) + \gamma^h Q(s_{t+h}, \pi(s_{t+h}))\right]
 \end{align}">
+            </center>
         </div>
 
         <div class="custom-blue-box">
             <h3>What QC is actually doing..</h3>
-            <img src="equations/qc-actual.svg" style="width: 100%;" alt="\begin{align}
+            <center>
+            <img src="equations/qc-actual.svg" style="width: 95%;" alt="\begin{align}
 Q(s_t, a_{t:t+h}) \leftarrow \mathbb{E}_{\color[rgb]{0,0.46,0.7265} s_{t+1:t+h+1}  \sim P_\mathcal{D}(\cdot \mid s_t, a_{t:t+h}) }\left[\sum_{t'=t}^{t+h-1} \gamma^{t'-t}r(s_{t'}, a_{t'}) + \gamma^h Q(s_{t+h}, \pi(s_{t+h}))\right]
 \end{align}">
+            </center>
             <!-- <img src="qc.svg" style="width: 100%;" alt="RLPD equations"> -->
         </div>
 
         <p>
-        Intuitively, as long as the data collection policy <b>reacts</b> to 
+        As long as the data collection policy <b>reacts</b> to 
         the observation/state feedback in the middle of an action chunk, the 
         resulting state and reward distribution will deviate from that of executing
         the action chunk <b2>open-loop</b2>.
@@ -174,10 +178,13 @@ Q(s_t, a_{t:t+h}) \leftarrow \mathbb{E}_{\color[rgb]{0,0.46,0.7265} s_{t+1:t+h+1
         <hr>
 
         <div class="custom-grey-box">
-          <h3>Definition (informal): Open-loop consistency (OLC)</h3>
-          <img src="equations/olc.svg" style="width: 100%;" alt="\begin{align}
+          <h3>Open-loop consistency (OLC)</h3>
+          <br>
+          <center>
+          <img src="equations/olc.svg" style="width: 92%;" alt="\begin{align}
 D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:t+h'}$ open-loop}} \mid\mid P_{\mathcal{D}}(s_{t+h'} \mid s_t, a_{t:t+h})) \leq \varepsilon_h, \forall h' \in \{1, 2, \cdots, h\}
 \end{align}">
+          </center>
         </div>
         
         <p>
@@ -190,11 +197,11 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
         <hr>
         
         <div class="custom-green-box">
-          <h3>Theorem (informal): QC learns a near-optimal action chunking policy under OLC.
+          <h3>Result 1: QC attains a near-optimal action chunking policy under OLC.
           </h3>
           <br>
           <center>
-          <img src="equations/thm-qc.svg" style="width: 65%;" alt="\begin{align}
+          <img src="equations/thm-qc.svg" style="width: 60%;" alt="\begin{align}
 \|V^\star - V_{\mathrm{QC}}\|_\infty \leq \Theta\left(\frac{\varepsilon_h}{(1-\gamma)(1-\gamma^h)}\right)
 \end{align}">
           </center>
@@ -203,14 +210,14 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
         <p>
           This bound is tight, meaning that the worst-case QC sub-optimality scales linearly with 
           ε. When the data is not open-loop consistent, there exists an MDP where the action chunking policy 
-          learned from the chunked critic is <b4>arbitrarily bad</b4>.
+          learned from the chunked critic is <strong>arbitrarily bad</strong>.
           In general, the degree of open-loop consistency (ε) is orthogonal to the
           sub-optimality of the data (which can hurt n-step return backup). So as long as the data distribution
           is sub-optimal while being open-loop consistent, critic chunking is preferred over n-step return backup:
         </p>
         
-        <div class="custom-blue-box">
-          <h3>Proposition (informal): QC is better than n-step return backup when</h3>
+        <div class="custom-green-box">
+          <h3>Result 2: QC is better than n-step return backup when</h3>
           <br>
           <center>
             <img src="equations/prop-compare.svg" style="width: 100%;" alt="\begin{align}
@@ -222,15 +229,15 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
 
         <p>
           Up to now, we have characterized the condition under which Q-chunking should be preferred over n-step return backup,
-          but action chunking policy is still fundamentally <b4>limited in reactivity</b4> as it must execute all actions in each chunk <b2>open-loop</b2>.
+          but action chunking policy is still fundamentally <strong>limited in reactivity</strong> as it must execute all actions in each chunk <b2>open-loop</b2>.
           A common trick that robotists use for action chunking is to actually replan more frequently than the chunk size, where only a partial action chunked
           is executed. But can we still provide theoretical guarantees with this 'decoupling' setup? 
           The answer is yes, at least in the special case where only the first action is taken in the action chunk 
           (i.e., closed-loop execution of the learned action chunking policy).
         </p>
 
-        <div class="custom-blue-box">
-          <h3>Proposition (informal): closed-loop execution of QC policy is also near-optimal under OLC</h3>
+        <div class="custom-green-box">
+          <h3>Result 3: closed-loop execution of QC policy is also near-optimal under OLC</h3>
           
           <center>
           <img src="equations/prop-dqc.svg" style="width: 65%;" alt="\begin{align}
@@ -254,7 +261,7 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
         </p>
 
         <div class="custom-grey-box">
-          <h3>Definition (informal): Bounded Optimality Variability (BOV)</h3>
+          <h3>Bounded Optimality Variability (BOV)</h3>
           <br>
           <center>
           <img src="equations/bov.svg" style="width: 100%;" alt="\begin{align}
@@ -270,29 +277,30 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
           Intuitively, <b3>BOV</b3> assumes the data is a mixture of multiple sources 
           (e.g., expert data, scripted policy), where each source exhibits small variability in
           terms of the optimality of the h-step returns (local), and the overall variability (across mixture components) 
-          <b4>conditioned on action chunk</b4> is also small. Under BOV, we can show that the closed-loop execution of the
+          <strong>conditioned on action chunk</strong> is also small. Under BOV, we can show that the closed-loop execution of the
           action chunking policy is guaranteed to be near-optimal, regardless of
-          how open-loop <i>inconsistent</i> the data is.
+          how <strong>open-loop inconsistent</strong> the data is.
         </p>
 
-        <div class="custom-blue-box">
-          <h3>Theorem (informal): DQC is near-optimal under BOV</h3>
+        <div class="custom-green-box">
+          <h3>Result 4: DQC attains a near-optimal closed-loop policy under BOV</h3>
           <br>
           <center>
-          <img src="equations/thm-dqc.svg" style="width: 65%;" alt="\begin{align}
+          <img src="equations/thm-dqc.svg" style="width: 85%;" alt="\begin{align}
 \|V^\star - V_{\mathrm{DQC}}\| \leq \Theta\left( \frac{\vartheta^L_h}{1-\gamma} + \frac{\vartheta^G_h + \gamma^h\min(\vartheta^L_h,\vartheta^G_h)}{(1-\gamma)(1-\gamma^h)}\right)
 \end{align}">
           </center>
         </div>
 
-        <!-- <p>
-          Now, it has become clear that the closed-loop execution of the action chunking policy (DQC)
-          enjoys theoretical guarantees under both OLC and 
-          BOV condition whreas QC is only provably near-optimal under OLC. 
-        </p> -->
+        <p>
+          This bound is also tight, meaning that both the global and local optimality conditions are necessary for
+          us to guarantee the near-optimality of the closed-loop execution of the action chunking policy. 
+          More importantly, the optimality gap does not depend on any measure of open-loop consistency (ε), which 
+          can make QC <strong>arbitrarily bad</strong> when the data is not OLC.
+        </p>
         <hr>
         <p>
-          <b>In summary</b>, when the data is OLC and sub-optimal, 
+          <strong>In summary</strong>, when the data is OLC and sub-optimal, 
           QC is preferred over n-step return backup. The closed-loop execution of the action chunking policy (DQC)
           enjoys theoretical guarantees under both OLC and 
           BOV condition whreas QC is only provably near-optimal under OLC, making DQC seem to be a more robust
@@ -346,23 +354,24 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
 
         <div class="custom-green-box">
             
-            <h3>DQC uses a distilled partial critic to extract a policy with shorter action chunks</h3>
-            <br>
+            <h3>DQC Pseudocode</h3>
             <center>
               <img src="equations/agent-update.svg" style="width: 100%;" alt="\begin{align}
+& \text{Let } h \text{ be the {\color[rgb]{0.7929,0.1602,0.4804}critic chunk size} and } h_a \text{ be the {\color[rgb]{0,0.46,0.7265}policy chunk size}}.  \phantom{\sum_{k = 0}^{h-1} \gamma^k r_{t+k} } \\
   & \text{1. Sample trajectory segment from the dataset }(s_{t:t+h+1}, a_{t:t+h}, r_{t:t+h}) \sim D. \phantom{\sum_{k = 0}^{h-1} \gamma^k r_{t+k} } \\
-  & \text{2. {\color[rgb]{0.7929,0.1602,0.4804}[Original full critic: \textbf{long}]} Optimize }Q \text{ with } \left(Q(s_t, a_{t:t+h}) - \sum_{k = 0}^{h-1} \gamma^k r_{t+k} - \gamma^h \bar Q^P(s_{t+h}, \pi(s_{t+h:t+h+h_a})\right)^2. \\
-  & \text{3. {\color[rgb]{0,0.46,0.7265}[Distilled partial critic: \textbf{short}]} Optimize }Q^P_\psi \text{ with }  f^{\kappa}_{\text{expectile}}(\bar Q(s_t, a_{t:t+h}) - Q^P(s_t, a_{t:t+h_a})).\phantom{\sum_{k = 0}^{h-1} \gamma^k r_{t+k} } 
+  & \text{2. {\color[rgb]{0.7929,0.1602,0.4804}[Original full critic: \textbf{long chunk}]} Optimize }Q \text{ with } L(Q) = \left(Q(s_t, a_{t:t+h}) - \sum_{k = 0}^{h-1} \gamma^k r_{t+k} - \gamma^h \bar Q^P(s_{t+h}, a_{t+h:t+h+h_a} \sim \pi(s_{t+h}))\right)^2. \\
+  & \text{3. {\color[rgb]{0,0.46,0.7265}[Distilled partial critic: \textbf{short chunk}]} Optimize }Q^P \text{ with }  L(Q^P)=\mathrm{ExpectileLoss}(\bar Q(s_t, a_{t:t+h}) - Q^P(s_t, a_{t:t+h_a})).\phantom{\sum_{k = 0}^{h-1} \gamma^k r_{t+k} } \\
+  & \text{4. Optimize }\pi(a_{t:t+h_a} \mid s_t) \text{ with } L(\pi) = \mathbb{E}_{a_{t:t+h_a} \sim \pi(\cdot \mid s_t)}\left[-Q^P(s_t,  a_{t:t+h_a})\right]. \text{ Repeat.}\phantom{\sum_{k = 0}^{h-1} \gamma^k r_{t+k} } 
   \end{align}"> 
               </center>
         </div>
 
         <p>
-          In summary, DQC trains a policy to predict a <b2>partial chunk</b2> by hill climbing the value of a <b2>partial critic</b2> 
+          <strong>In summary</strong>, DQC trains a policy to predict a <b2>partial chunk</b2> by hill climbing the value of a <b2>partial critic</b2> 
           that is distilled from the <b>original full chunk critic</b> via an implicit maximization loss. 
           This allows our policy to enjoy both the value speedup benefits associated with Q-chunking without explicitly
-          predicting the full action chunk. Such design not only <b4>mitigates the learning challenge</b4> of an action chunking 
-          policy but also <b4>allows for better reactivity</b4>, enjoying some nice theoretical guarantees as discussed in <a href="#Theory">Part A above</a>. 
+          predicting the full action chunk. Such design not only <strong>mitigates the learning challenge</strong> of an action chunking 
+          policy but also <strong>allows for better reactivity</strong>, enjoying some nice theoretical guarantees as discussed in <a href="#Theory">Part A above</a>. 
           Next, we put our DQC algorithm into test by evaluating it on challenging goal-conditioned RL tasks.
         </p> 
         <hr>

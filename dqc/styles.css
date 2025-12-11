@@ -1,39 +1,39 @@
 .custom-purple-box {
     border: 3px solid #CB297B;   /* Border color */
-    padding: 40px;                /* Padding inside the box */
+    padding: 3%;                /* Padding inside the box */
     background-color: #CB297B10;   /* Light grey background */
     border-radius: 10px;          /* Rounded corners */
     outline: none;                /* Remove outline */
-    padding-bottom: 40px; 
-    margin: 10px 5px 10px 5px;
+    padding-bottom: 3%; 
+    margin: 2% 0% 2% 0%;
 }
 .custom-blue-box {
     border: 3px solid #0076BA;   /* Border color */
-    padding: 40px;                /* Padding inside the box */
+    padding: 3%;                /* Padding inside the box */
     background-color: #0076BA10;   /* Light grey background */
     border-radius: 10px;          /* Rounded corners */
     outline: none;                /* Remove outline */
-    padding-bottom: 40px; 
-    margin: 10px 5px 10px 5px;
+    padding-bottom: 3%; 
+    margin: 2% 0% 2% 0%;
 }
 .custom-grey-box {
     border: 3px solid #a0a0a0;   /* Border color */
-    padding: 40px;                /* Padding inside the box */
+    padding: 3%;                /* Padding inside the box */
     background-color: #a0a0a010;   /* Light grey background */
     border-radius: 10px;          /* Rounded corners */
     outline: none;                /* Remove outline */
-    padding-bottom: 40px; 
-    margin: 40px 5px 40px 5px;
+    padding-bottom: 3%; 
+    margin: 2% 0% 2% 0%;
 }
 
 .custom-green-box {
     border: 3px solid #00A89D;   /* Border color */
-    padding: 40px;                /* Padding inside the box */
+    padding: 3%;                /* Padding inside the box */
     background-color: #00A89D10;   /* Light grey background */
     border-radius: 10px;          /* Rounded corners */
     outline: none;                /* Remove outline */
-    padding-bottom: 40px; 
-    margin: 40px 5px 40px 5px;
+    padding-bottom: 3%; 
+    margin: 2% 0% 2% 0%;
 }
 
 .custom-title {
@@ -102,6 +102,7 @@ b4 {
 }
 
 strong {
+    font-weight: 900;
     font-family: "Nunito", sans-serif;
     color: #00A89D;
 }
