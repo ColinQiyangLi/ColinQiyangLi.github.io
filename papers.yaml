@@ -1,4 +1,28 @@
 papers:
+
+  - name: dqc
+    title: 
+      link: https://arxiv.org/pdf/2512.10926
+      name: Decoupled Q-Chunking
+    authors:
+      - me: true
+      - name: Seohong Park
+        href: https://seohong.me/
+      - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
+    conference:
+      name: Preprint
+      year: 2025
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/2512.10926
+      - name: code
+        href: https://github.com/colinqiyangli/dqc
+      - name: website
+        href: dqc/index.html
+    highlighted: true
+    nogif: true
+
   - name: expo
     title:
       link: https://arxiv.org/pdf/2507.07986
