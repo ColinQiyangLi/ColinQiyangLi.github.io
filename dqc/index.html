@@ -44,7 +44,7 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2512.10926"
+                <a href="https://arxiv.org/abs/2512.10926"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -52,6 +52,7 @@
                   <span>Paper</span>
                 </a>
               </span>
+
               <span class="link-block">
                 <a href="https://github.com/colinqiyangli/dqc"
                    class="external-link button is-normal is-rounded is-dark">
@@ -413,10 +414,30 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
 <section class="section">
   <div class="container is-max-desktop ">
     <h2 class="title is-3" id="Results">Experiments <a href="#Content">↺</a></h2>
+
     <p>
       We evaluated our method on 6 hardest <a href="https://seohong.me/projects/ogbench/">OGBench</a> 
-      environments comparing with a few <b3>ablation baselines</b3>:
+      environments. These environments are long-horizon and extremely difficult to solve with standard 
+      1-step TD, making it an ideal testbed for our method. Below are some example videos of 
+      what it takes to solve some of the most challenging tasks in these environments (taken from Seohong's <a href="https://seohong.me/blog/q-learning-is-not-yet-scalable/">blogpost</a>)
+    </p>
+    <div class="video-section" style="display: flex; flex-wrap: center;">
+      <div style="flex: 1 1 100%; max-width: 50%; text-align: center;">
+        <video width="100%" controls autoplay muted loop>
+          <source src="videos/puzzle-4x6.mp4" type="video/mp4" />
+        </video>
+        <h3 class="title is-4">puzzle-4x6</h3>
+      </div>
+      <div style="flex: 1 1 100%; max-width: 50%; text-align: center;">
+        <video width="100%" controls autoplay muted loop>
+          <source src="videos/cube-octuple.mp4" type="video/mp4" />
+        </video>
+        <h3 class="title is-4">cube-octuple</h3>
+      </div>
+    </div>
     <br>
+    <p>
+    For our experiments, we compare with a few <b3>ablation baselines</b3>:
     <b3>(1) OS</b3>: one-step TD
     <br>
     <b3>(2) NS</b3>: n-step TD
@@ -457,7 +478,7 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
     </div>
     <p>
     That is all for now! We have released our code and all the experiment data for our main results at <a href="https://github.com/colinqiyangli/dqc">github.com/colinqiyangli/dqc</a>. 
-    If you are interested in learning more about the paper, come check out <a href="https://arxiv.org/pdf/2512.10926">our full paper on arXiv!</a>
+    If you are interested in learning more, come check out <a href="https://arxiv.org/pdf/2512.10926">our full paper on arXiv!</a>
     </p>
   </div>
      
