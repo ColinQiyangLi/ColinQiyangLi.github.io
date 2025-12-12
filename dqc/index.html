@@ -8,8 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DQC</title>
 
-  <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet"> -->
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css"> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-slider@2.0.5/dist/css/bulma-slider.min.css">
@@ -17,28 +15,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" type='text/css'>
   <link rel="stylesheet" href="styles.css">
-  <!-- <link rel="stylesheet" href="./static/css/index.css"> -->
   <link rel="icon" href="https://example.com/path/to/favicon.ico">
 </head>
 
 <body>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
-  <script>
-  var options = {
-    autoMatchOsTheme: false // default: true
-  }
-
-  const darkmode = new Darkmode(options);
-  darkmode.showWidget();
-  </script> -->
-
 <section class="hero">
   <div class="hero-body"  style="padding-bottom: 0;">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-2 publication-title">Decoupled Q-Chunking</h1>
-          <!-- <h2 class="title" style="font-size: large; color: grey;"></h2> -->
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://colinqiyangli.github.io">Qiyang Li</a>,
@@ -55,12 +41,10 @@
             <span class="author-block" style="font-family:Nunito">UC Berkeley</span>
           </div>
 
-
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/xxxx.xxxxx"
+                <a href="https://arxiv.org/pdf/2512.10926"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -128,7 +112,56 @@
 
               <h3><b3>> Part B | Practical Algorithm</b3> — DQC <a href="#Practical"> ➜</a> </h3>
 
-              <h3><b3>> Results</b3> <a href="#Results"> ➜</a></h3>
+              <h3><b3>> Part C | Experiments</b3> <a href="#Results"> ➜</a></h3>
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="custom-box">
+      <h2 class="title is-3" id="Background">Background: A primer on n-step return and Q-chunking</h2>
+      <div class="columns">
+        <div class="column">
+          <div class="content has-text-justified">
+            <p>
+              Our work focuses on Q-learning, a popular off-policy, value-based family of reinforcement learning (RL) algorithms
+              that learn a state-action value function, typically via temporal difference (TD) backup. The most standard choice is
+              the <b4>1-step TD backup</b4>:
+            </p>
+            <center>
+            <img src="equations/os.svg" style="width: 70%;" alt="Q(s_t, a_t) \leftarrow r(s_t, a_t) + \gamma Q(s_{t+1}, a_{t+1} \sim \pi(\cdot \mid s_{t+1}))">
+            </center>
+            <p>
+            where the value of a state-action pair is updated towards the immediate reward 
+            plus the discounted estimated value 1-step in to the future. 
+            </p>
+            <p>
+            For long-horizon sparse-reward tasks, it is often beneficial to use <b4>n-step return backup</b4> instead
+            to speedup value learning:
+            </p>
+            <center>
+            <img src="equations/ns.svg" style="width: 82%;" alt="Q(s_t, a_t) \leftarrow \sum_{t'=t}^{t+n-1} \gamma^{t'-t}r(s_t, a_t) + \gamma^n Q(s_{t+n}, a_{t+n} \sim \pi(\cdot \mid s_{t+n}))">
+            </center>
+            <p>
+            However, n-step return backup uses the off-policy trajectories to estimate the return which
+            can be overly pessemistic when the data distribution is sub-optimal. 
+            </p>
+            <p>
+            More recently, <b2>Q-chunking (QC)</b2> <a href="https://arxiv.org/abs/2507.07969">(Li et al., 2025)</a> 
+            was proposed as an alternative that avoids this off-policy bias for n-step return backup. This is achieved by 
+            grouping short sequences of actions as chunks and learning a chunked critic to estimate the value of carrying out
+            a 'chunk' of actions in the n-step horizon rather than a single action:
+            </p>
+            <center>
+            <img src="equations/qc.svg" style="width: 95%;" alt="Q(s_t, {\color[rgb]{0.7929,0.1602,0.4804}a_{t:t+h}}) \leftarrow \sum_{t'=t}^{t+h-1} \gamma^{t'-t}r(s_t, a_t) + \gamma^h Q(s_{t+h}, {\color[rgb]{0.7929,0.1602,0.4804}a_{t+h:t+2h}} \sim \pi(\cdot \mid s_{t+n}))">
+            </center>
+            <p>
+            The chunked critic allows QC to directly capture the value of the action chunks, which does not suffer from the off-policy bias.
             </p>
           </div>
         </div>
@@ -143,7 +176,7 @@
       <div class="column">
         <div class="content has-text-justified">
           <p>
-            In QC, the chunked critic is learned with n-step return backups, but there is a problem—the learned value function may not converge
+            In Q-chunking (QC), the chunked critic is learned with n-step return backups, but there is a problem—the learned value function may not converge
              to the correct value due to a subtle <b>discre</b><b2>pancy</b2>:
           </p>
           
@@ -163,7 +196,6 @@ Q(s_t, a_{t:t+h}) \leftarrow \mathbb{E}_{\color[rgb]{0.7929,0.1602,0.4804} s_{t'
 Q(s_t, a_{t:t+h}) \leftarrow \mathbb{E}_{\color[rgb]{0,0.46,0.7265} s_{t+1:t+h+1}  \sim P_\mathcal{D}(\cdot \mid s_t, a_{t:t+h}) }\left[\sum_{t'=t}^{t+h-1} \gamma^{t'-t}r(s_{t'}, a_{t'}) + \gamma^h Q(s_{t+h}, \pi(s_{t+h}))\right]
 \end{align}">
             </center>
-            <!-- <img src="qc.svg" style="width: 100%;" alt="RLPD equations"> -->
         </div>
 
         <p>
@@ -179,7 +211,6 @@ Q(s_t, a_{t:t+h}) \leftarrow \mathbb{E}_{\color[rgb]{0,0.46,0.7265} s_{t+1:t+h+1
 
         <div class="custom-grey-box">
           <h3>Open-loop consistency (OLC)</h3>
-          <br>
           <center>
           <img src="equations/olc.svg" style="width: 92%;" alt="\begin{align}
 D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:t+h'}$ open-loop}} \mid\mid P_{\mathcal{D}}(s_{t+h'} \mid s_t, a_{t:t+h})) \leq \varepsilon_h, \forall h' \in \{1, 2, \cdots, h\}
@@ -199,7 +230,6 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
         <div class="custom-green-box">
           <h3>Result 1: QC attains a near-optimal action chunking policy under OLC.
           </h3>
-          <br>
           <center>
           <img src="equations/thm-qc.svg" style="width: 60%;" alt="\begin{align}
 \|V^\star - V_{\mathrm{QC}}\|_\infty \leq \Theta\left(\frac{\varepsilon_h}{(1-\gamma)(1-\gamma^h)}\right)
@@ -218,7 +248,6 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
         
         <div class="custom-green-box">
           <h3>Result 2: QC is better than n-step return backup when</h3>
-          <br>
           <center>
             <img src="equations/prop-compare.svg" style="width: 100%;" alt="\begin{align}
 &\underbrace{Q^\star(s_t, a_t) -  \mathbb{E}_{P_{\mathcal{D}}(s_{t+1:t+h+1}, a_{t+1:t+h} \mid s_t, a_t)}\left[\sum_{t'=t}^{t+h-1} \gamma^{t'-t}r(s_{t'}, a_{t'})+ \gamma^h V^\star(s_{t+h})\right]}_{\text{sub-optimality of the data distribution}} > O\left(\frac{\varepsilon_h}{1-\gamma^h}\right), \\
@@ -238,7 +267,6 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
 
         <div class="custom-green-box">
           <h3>Result 3: closed-loop execution of QC policy is also near-optimal under OLC</h3>
-          
           <center>
           <img src="equations/prop-dqc.svg" style="width: 65%;" alt="\begin{align}
 \|V^\star - V_{\mathrm{DQC}}\|_\infty \leq O\left(\frac{\varepsilon_h}{(1-\gamma)^2(1-\gamma^h)}\right)
@@ -253,7 +281,7 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
         </p>
         <hr>
         <p>
-          In <a href="https://arxiv.org/pdf/xxxx.xxxxx">our paper</a>, we also characterized a new set of conditions under 
+          In <a href="https://arxiv.org/pdf/2512.10926">our paper</a>, we also characterized a new set of conditions under 
           which such closed-loop execution is guaranteed to be close to the 
           optimal closed-loop policy even when the data is not open-loop consistent.
           This is where the decoupling of the execution length of the action chunk 
@@ -262,7 +290,6 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
 
         <div class="custom-grey-box">
           <h3>Bounded Optimality Variability (BOV)</h3>
-          <br>
           <center>
           <img src="equations/bov.svg" style="width: 100%;" alt="\begin{align}
 &\text{Let } \mathcal{D} \text{ be a mixture of } \{\mathcal{D}_1, \mathcal{D}_2, \cdots, \mathcal{D}_M\} \text{ with } \mathcal{D}^\star \text{ being one of } \mathcal{D}_i. \text{ Both of the following conditions hold:}\\
@@ -335,9 +362,11 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
           <br> 
         <hr>
           <br>
-          Our solution is simple, just distill a partial chunk size critic from the full chunk size critic, 
-          and then extract the policy from this distilled critic! The goal of the distilled critic is to match 
+          <p>
+          Our solution is simple: (1) distill a partial chunk size critic from the full chunk size critic, 
+          and then (2) extract the policy from this distilled critic! The goal of the distilled critic is to match 
           the value of the full critic given that the second half of the action chunk is optimally picked:
+          </p>
         </p>
 
         <div class="custom-grey-box">
@@ -371,7 +400,7 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
           that is distilled from the <b>original full chunk critic</b> via an implicit maximization loss. 
           This allows our policy to enjoy both the value speedup benefits associated with Q-chunking without explicitly
           predicting the full action chunk. Such design not only <strong>mitigates the learning challenge</strong> of an action chunking 
-          policy but also <strong>allows for better reactivity</strong>, enjoying some nice theoretical guarantees as discussed in <a href="#Theory">Part A above</a>. 
+          policy but also <strong>allows for better reactivity</strong>, enjoying some nice theoretical guarantees as discussed in <a href="#Theory">Part A</a>. 
           Next, we put our DQC algorithm into test by evaluating it on challenging goal-conditioned RL tasks.
         </p> 
         <hr>
@@ -383,7 +412,7 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
 
 <section class="section">
   <div class="container is-max-desktop ">
-    <h2 class="title is-3" id="Results">Results <a href="#Content">↺</a></h2>
+    <h2 class="title is-3" id="Results">Experiments <a href="#Content">↺</a></h2>
     <p>
       We evaluated our method on 6 hardest <a href="https://seohong.me/projects/ogbench/">OGBench</a> 
       environments comparing with a few <b3>ablation baselines</b3>:
@@ -400,7 +429,7 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
     <!-- </ul> -->
     In practice, we also use a separate value function to approximate the Q-target in the n-step TD backup and best-of-N policy extraction similar
     to how it is done in IDQL <a href="https://arxiv.org/abs/2304.10573">(Hansen-Estruch et al., 2023)</a> and SHARSA <a href="https://arxiv.org/abs/2506.04168">(Park et al., 2025)</a>. 
-    See more details in <a href="https://arxiv.org/pdf/xxxx.xxxxx">our paper</a>. 
+    See more details in <a href="https://arxiv.org/pdf/2512.10926">our paper</a>. 
     </p>
     <hr>
     <p>
@@ -428,7 +457,7 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
     </div>
     <p>
     That is all for now! We have released our code and all the experiment data for our main results at <a href="https://github.com/colinqiyangli/dqc">github.com/colinqiyangli/dqc</a>. 
-    If you are interested in learning more about the paper, come check out <a href="https://arxiv.org/pdf/xxxx.xxxxx">our full paper on arXiv!</a>
+    If you are interested in learning more about the paper, come check out <a href="https://arxiv.org/pdf/2512.10926">our full paper on arXiv!</a>
     </p>
   </div>
      
@@ -443,7 +472,7 @@ D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
   title  = {Decoupled Q-chunking},
   conference = {arXiv Pre-print},
   year = {2025},
-  url = {http://arxiv.org/abs/xxxx.xxxxx},
+  url = {http://arxiv.org/abs/2512.10926},
 }</code></pre></div>
 </section>
 
