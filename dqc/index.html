@@ -214,7 +214,7 @@ Q(s_t, a_{t:t+h}) \leftarrow \mathbb{E}_{\color[rgb]{0,0.46,0.7265} s_{t+1:t+h+1
           <h3>Open-loop consistency (OLC)</h3>
           <center>
           <img src="equations/olc.svg" style="width: 92%;" alt="\begin{align}
-D_{\mathrm{KL}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:t+h'}$ open-loop}} \mid\mid P_{\mathcal{D}}(s_{t+h'} \mid s_t, a_{t:t+h})) \leq \varepsilon_h, \forall h' \in \{1, 2, \cdots, h\}
+D_{\mathrm{TV}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:t+h'}$ open-loop}} \mid\mid P_{\mathcal{D}}(s_{t+h'} \mid s_t, a_{t:t+h})) \leq \varepsilon_h, \forall h' \in \{1, 2, \cdots, h\}
 \end{align}">
           </center>
         </div>
