@@ -1,5 +1,24 @@
 papers:
 
+  - name: qam
+    title: 
+      link: https://arxiv.org/pdf/2601.14234
+      name: Q-learning with Adjoint Matching
+    authors:
+      - me: true
+      - name: Sergey Levine
+        href: https://people.eecs.berkeley.edu/~svlevine
+    conference:
+      name: Preprint
+      year: 2026
+    links:
+      - name: arXiv
+        href: https://arxiv.org/abs/2601.14234
+      - name: code
+        href: https://github.com/colinqiyangli/qam
+    highlighted: true
+    nogif: true
+
   - name: dqc
     title: 
       link: https://arxiv.org/pdf/2512.10926
