@@ -81,22 +81,23 @@
         <img alt="teaser figure" src="dqc-bar-tran.png">
       </picture>
     </div>
-
+  </div>
+  <div class="column">
     <div class="container is-max-desktop has-text-centered">
-    <div class="custom-green-box">
-      <h2 class="title is-2" style="color: #00A89D;"> TL;DR </h2>
-      <div class="columns">
-        <div class="column">
-          <div class="content has-text-justified">
-            <p class="is-size-5">
-              <strong>Decoupled Q-chunking</strong> improves upon <a href="https://colinqiyangli.github.io/qc/">Q-chunking</a> by decoupling the chunk size of the policy
-              from that of the critic. <b>Policies</b> with <b>short action chunks</b> are easier to learn and 
-              <b2>critics</b2> with <b2>long action chunks</b2> speed up value learning.
-            </p>
+      <div class="custom-green-box">
+        <h2 class="title is-2" style="color: #00A89D;"> TL;DR </h2>
+        <div class="columns">
+          <div class="column">
+            <div class="content has-text-justified">
+              <p class="is-size-5">
+                <strong>Decoupled Q-chunking</strong> improves upon <a href="https://colinqiyangli.github.io/qc/">Q-chunking</a> by decoupling the chunk size of the policy
+                from that of the critic. <b>Policies</b> with <b>short action chunks</b> are easier to learn and 
+                <b2>critics</b2> with <b2>long action chunks</b2> speed up value learning.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   </div>
 </section>
@@ -438,6 +439,7 @@ D_{\mathrm{TV}}(\underbrace{T(s_{t+h'} \mid s_t, a_{t:t+h'})}_{\text{take $a_{t:
     <br>
     <p>
     For our experiments, we compare with a few <b3>ablation baselines</b3>:
+    <br>
     <b3>(1) OS</b3>: one-step TD
     <br>
     <b3>(2) NS</b3>: n-step TD
