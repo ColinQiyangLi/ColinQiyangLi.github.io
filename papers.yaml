@@ -16,6 +16,8 @@ papers:
         href: https://arxiv.org/abs/2601.14234
       - name: code
         href: https://github.com/colinqiyangli/qam
+      - name: website
+        href: qam/index.html
     highlighted: true
     nogif: true
 

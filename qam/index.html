@@ -108,7 +108,7 @@
         <p>
         Adjoint Matching <a href="https://arxiv.org/abs/2409.08861">(Domingo-Enrich et al., 2025)</a> is a recently proposed technique
         in the generative modeling literature that fine-tunes a <a href="https://arxiv.org/abs/2412.06264">flow-matching</a> 
-        model to maximize a reward function Q under a standard KL regularization/constraint. Normally, generating/sampling a sample
+        model to maximize a reward function under a standard KL regularization/constraint. Normally, generating/sampling a sample
         from a flow model involves sampling a noise and then solve an ordinary differential equation (ODE) via numerical integration. 
         One may also convert this ODE into 
         an SDE that admits the same path marginals subject to any noise schedule (σ), using the score function:
@@ -121,28 +121,34 @@
         we can simplify the ODE to SDE conversion further. Here, we assume the flow velocity field reconstructs the flow defined by <img src="equations/flow.svg" alt="X_t = tX_1 + (1-t)X_0">:
         </p>
         <div class="custom-grey-box">
-            <img src="equations/ode-sde-v2.svg" style="width: 100%;" alt="\mathrm{d}X_t = f(X_t, t) \mathrm{d}t \quad \Leftrightarrow_d \quad  \mathrm{d}X_t = \left[\left(1+\frac{\sigma_t^2 t }{2(1-t)}\right)f(X_t, t) - \frac{\sigma_t^2 }{2(1-t)}X_t\right] + \sigma_t \mathrm{d} B_t"> 
+          <center> 
+            <img src="equations/ode-sde-v2.svg" style="width: 80%;" alt="\mathrm{d}X_t = f(X_t, t) \mathrm{d}t \quad \Leftrightarrow_d \quad  \mathrm{d}X_t = \left[\left(1+\frac{\sigma_t^2 t }{2(1-t)}\right)f(X_t, t) - \frac{\sigma_t^2 }{2(1-t)}X_t\right] + \sigma_t \mathrm{d} B_t"> 
+          </center>
         </div>
         <p>
         Under a memoryless noise schedule (e.g., <img src="equations/memoryless.svg" alt="\sigma_t = \sqrt{2(1-t)/t}">), the conversion can be further
         simplified into
         </p>
         <div class="custom-grey-box">
-            <img src="equations/ode-sde-v3.svg" style="width: 100%;" alt="\mathrm{d}X_t = f(X_t, t) \mathrm{d}t \quad \Leftrightarrow_d \quad  \mathrm{d}X_t = \left[2f(X_t, t) - X_t/t\right] + \sigma_t \mathrm{d} B_t"> 
+            <center>
+              <img src="equations/ode-sde-v3.svg" style="width: 60%;" alt="\mathrm{d}X_t = f(X_t, t) \mathrm{d}t \quad \Leftrightarrow_d \quad  \mathrm{d}X_t = \left[2f(X_t, t) - X_t/t\right] + \sigma_t \mathrm{d} B_t"> 
+            </center>
         </div>
         <p>
         The memoryless schedule ensures the noise is independent from the output from the SDE: <img src="equations/memoryless-effect.svg" alt="p(X_1) = p(X_1 \mid X_0)">. 
         This allows <a href="https://arxiv.org/abs/2409.08861">Domingo-Enrich et al., 2025</a> to use the following stochastic optimal control objective to any flow model against a reward function.
         </p>
         <div class="custom-grey-box">
-            <img src="equations/soc.svg" style="width: 100%;" alt="L_{\mathrm{SOC}}(\theta) = \mathbb{E}_{\mathbf{X} \sim \mathrm{SDE}(f_\theta)}\left[ \int_0^1 \left(\frac{2}{\sigma_t^2}\|f_\theta(X_t, t) - f_\beta(X_t, t)\|_2^2\right) \mathrm{d} t - Q(X_1)\right]"> 
+          <center>
+            <img src="equations/soc.svg" style="width: 70%;" alt="L_{\mathrm{SOC}}(\theta) = \mathbb{E}_{\mathbf{X} \sim \mathrm{SDE}(f_\theta)}\left[ \int_0^1 \left(\frac{2}{\sigma_t^2}\|f_\theta(X_t, t) - f_\beta(X_t, t)\|_2^2\right) \mathrm{d} t - Q(X_1)\right]"> 
+          </center>
         </div>
         <p>
         At the optimum, fine-tuned velocity field generates the optimal KL-constrained distribution (an expoential tilt of the base flow model):
         </p>
         <div class="custom-grey-box">
           <center>
-          <img src="equations/opt.svg" style="width: 40%;" alt="p_{\theta^\star}\star(X_1) \propto p_\beta(X_1) e^{Q(X_1)}"> 
+          <img src="equations/opt.svg" style="width: 30%;" alt="p_{\theta^\star}\star(X_1) \propto p_\beta(X_1) e^{Q(X_1)}"> 
           </center>
         </div>
         <p>
