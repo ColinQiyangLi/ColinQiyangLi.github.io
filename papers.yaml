@@ -9,7 +9,7 @@ papers:
       - name: Sergey Levine
         href: https://people.eecs.berkeley.edu/~svlevine
     conference:
-      name: Preprint
+      name: International Conference on Learning Representations (ICLR)
       year: 2026
     links:
       - name: arXiv
@@ -32,8 +32,8 @@ papers:
       - name: Sergey Levine
         href: https://people.eecs.berkeley.edu/~svlevine
     conference:
-      name: Preprint
-      year: 2025
+      name: International Conference on Learning Representations (ICLR)
+      year: 2026
     links:
       - name: arXiv
         href: https://arxiv.org/abs/2512.10926
@@ -57,8 +57,8 @@ papers:
       - name: Chelsea Finn
         href: https://ai.stanford.edu/~cbfinn/
     conference:
-      name: Preprint
-      year: 2025
+      name: International Conference on Learning Representations (ICLR)
+      year: 2026
     links:
       - name: arXiv
         href: https://arxiv.org/abs/2507.07986
